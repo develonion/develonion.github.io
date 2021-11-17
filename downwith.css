@@ -1,3 +1,11 @@
 p {
-	margin-left: 2em;
+	margin-left: 1em; /* adds margin to paragraphs */
+}
+
+img {
+	max-width: 100%; /* keep images from stretching beyond page */
+}
+
+dt {
+	font-weight: bold; /* bolds titles in descriptive lists */
 }
