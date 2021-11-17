@@ -9,3 +9,10 @@ img {
 dt {
 	font-weight: bold; /* bolds titles in descriptive lists */
 }
+
+#header {
+	position:sticky; /* sticks it to the top */
+	position:-webkit-sticky; /* safari work around too */
+	top:0;
+	background:white;
+}
