@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
 <head>
-	<title>Copied Factory | Template</title>
+	<title>Copied Factory | BLM</title>
 	<link rel="stylesheet" href="downwith.css">
+	<link rel="stylesheet" href="skills/blm.css">
+	<link rel="stylesheet" href="skills/caster.css">
 	<meta charset="UTF-8">
 </head>
 <body>
@@ -51,29 +53,31 @@
 <!-- Here be where page content actually starts! Anything not between these comments should be the same on every page. -->
 <div id="body">
 	
-<h2>5.X BLM Guide</h2>
-	<em>Last updated: April 15, 2020</em>
+<h2 id="guide" style="display:inline;">5.X BLM Guide</h2>
+<span><em>Last updated: April 15, 2020</em></span>
 
+<section>
 <h3 id="cont">Contents</h3>
-<nav style="margin-left:1em;">
-<a href="#gen">General Info</a><br />
-<a href="#open">Openers</a><br />
-<a href="#rot">Single Target Rotation</a><br />
-<a href="#recover">Recovery and Reopeners</a><br />
-<a href="#aoe">AoE Rotation (3+ Targets)</a><br />
-<a href="#move">Movement and Uptime</a><br />
-<a href="#sps">Spell Speed Thresholds</a><br />
-<a href="#level">Leveling Rotations</a><br />
-<a href="#macro">Macros</a><br />
-<a href="#gear">About Gear</a><br />
-<a href="#append">Appendix</a><br />
-</nav>
+	<nav style="margin-left:1em;">
+		<a href="#gen">General Info</a><br />
+		<a href="#open">Openers</a><br />
+		<a href="#rot">Single Target Rotation</a><br />
+		<a href="#recover">Recovery and Reopeners</a><br />
+		<a href="#aoe">AoE Rotation (3+ Targets)</a><br />
+		<a href="#move">Movement and Uptime</a><br />
+		<a href="#sps">Spell Speed Thresholds</a><br />
+		<a href="#level">Leveling Rotations</a><br />
+		<a href="#macro">Macros</a><br />
+		<a href="#gear">About Gear</a><br />
+		<a href="#append">Appendix</a><br />
+	</nav>
 
-<p style="margin-left:0;">My IGN is Caro Kann, and I’m a BLM main (now SCH (AND NOW AST) :pepega:) and this is my guide for playing 5.X BLM. In this guide, I go over the basics of the BLM rotation and offer some potential optimizations.</p>
+	<p style="margin-left:0;">My IGN is Caro Kann, and I’m a BLM main (now SCH (AND NOW AST) :pepega:) and this is my guide for playing 5.X BLM. In this guide, I go over the basics of the BLM rotation and offer some potential optimizations.</p>
+</section>
 
-
-<br /><h3 id="gen">General Info</h3><hr />
-	<h4>Abilities</h4>
+<h3 id="gen">General Info</h3><hr />
+<section>	
+<h4>Abilities</h4>
 		<p>If you’re in game, look at your Actions & Traits page. Read your tooltips. Read your traits, they alter tooltips sometimes. If you’re not in game, look at SE’s <a href="https://na.finalfantasyxiv.com/jobguide/blackmage/">Job Guide</a> page.</p>
 		
 	<h4>Abbreviations</h4>
@@ -98,10 +102,11 @@
 		<p>Astral Fire and Umbral Ice do a lot of things. Skim over and make sure you’re not working with misconceptions, particularly about damage buff values. (Imgur Mirror)</p>
 		
 	<h4>Weaving and Clipping</h4>
-		<p>See this Infographic. Whenever possible, weave oGCDs rather than clipping with them. For BLM, this means using at most one oGCD after the fast-cast F3 / B3 when swapping between AF3 / UI3. Each clip costs you roughly ~140 potency.</p>
+		<p><a href="https://cdn.discordapp.com/attachments/583967082132275200/622194213987156038/GCD_BLM_ed.png">See this Infographic.</a> Whenever possible, weave oGCDs rather than clipping with them. For BLM, this means using at most one oGCD after the fast-cast F3 / B3 when swapping between AF3 / UI3. Each clip costs you roughly ~140 potency.</p>
+</section>
 
-
-<br /><h3 id="open">Openers</h3><hr />
+<h3 id="open">Openers</h3><hr />
+<section>
 	<p>Openers should put abilities on cooldown, fit strong spells within buff windows, and minimize clipping. All openers assume there is a pull countdown and the boss is pulled at 0. If your group pulls earlier, adjust them as necessary. Use the highest tier Tincture / Infusion / Potion of Intelligence available.</p>
 	<p>With all openers being very close in estimated output over the course of the entire encounter, it is instead recommended to choose your opener based on your current spellspeed, with consideration towards potential fight-specific requirements.</p>
 
@@ -111,12 +116,21 @@
 	<li>&gt;3600: JP opener</li></ul>
 
 	<h4>JP Opener</h4>
-		<img src="images/blm/jpopener.png" />
+		<div class="rot">
+			<ul id="rot">
+			<li id="isharp"/><li id="fire3"/><li id="ienoc"/><li id="thun3"/><li id="fire4"/><li id="itriple"/><li id="fire4"/><li id="ipot"/><li id="fire4"/><li id="ileylines"/><li id="fire4"/><li id="iswift"/><li id="despair"/><li id="convert"/><li id="fire4"/><li id="despair"/><li id="blizz3"/><li id="isharp"/><li id="thunproc"/><li id="blizz4"/>
+			</ul>
+		</div>
 		<p><em>Precast: Sharp at -12s and F3 at -4s.</em></p>
 		<p>This is a reliable opener for especially high spellspeed sets, because it does not rely on having a polyglot stack available in time for Xeno for filler at the end that other openers utilize. However, in order to ensure that the thundercloud proc will last long enough to use instead, 3600+ SpS is required. Below this threshold, the thundercloud proc can fall off losing you a chunk of damage.</p>
 
 	<h4>Modified JP Opener</h4>
-		<img src="images/blm/jpmod.png" />
+		<img src="images/blm/jpmod.png" /><br/>
+		<div class="rot">
+			<ul id="rot">
+			<li id="isharp"/><li id="ileylines"/><li id="fire3"/><li id="ienoc"/><li id="thun3"/><li id="fire4"/><li id="itriple"/><li id="fire4"/><li id="ipot"/><li id="fire4"/><li id="iswift"/><li id="fire4"/><li id="despair"/><li id="convert"/><li id="fire4"/><li id="despair"/><li id="blizz3"/><li id="isharp"/><li id="thunproc"/><li id="blizz4"/>
+			</ul>
+		</div>
 		<p><em>Precast: Sharp at -12s, LL at -4s, and F3 at -3s.</em></p>
 		<p>This is an extension of the JP Opener which utilizes pre-pull LL use to lower the spellspeed requirement while still taking advantage of not having Xeno available in time for UI filler that you need for other openers. While technically possible around the 1929 SpS tier this variant is mostly recommended as an option for the 2500-3600 SpS range.</p>
 
@@ -141,9 +155,10 @@
 	<h4>Variations</h4>  
 		<p>The openers above aren’t absolute. Alter them to fit fight requirements. Add Swift after an instant to cover an extra F4 / Despair or hold for fight mechanics.</p>
 		<p>Do not precast Swift or Triple. This puts you behind a GCD, due to waiting for the Recast before your next Spell. If there’s no pull countdown or you’re unable to precast, then precast Swift is fine.</p>
+</section>
 
-
-<br /><h3 id="rot">Single Target Rotation</h3><hr />
+<h3 id="rot">Single Target Rotation</h3><hr />
+<section>
 	<h4>Base Rotation</h4>
 		<img src="images/blm/baserot.png" />
 		<p>Base rotation before procs. This can be split into two parts: the Ice Phase and the Fire Phase. Thunder and Xeno placement are less clearly defined. <em>The empty GCDs represent filler: B4, T3, and/or Xeno.</em></p>
@@ -162,7 +177,7 @@
 			<p>Use this for all usual Ice Phases. T3 can be cast before B4 if you get a fast MP tick. Xeno can replace T3 if the DoT is still ticking.</p>
 		<h6>No Xeno or T3 filler</h6>
 			<img src="images/blm/noxeno.png" />
-			<p>If the T3 DoT is still active when finishing the B4 cast and you don’t have Xeno for UI, wait up to ~1 second for the MP tick. See the Appendix for an alternative option.</p>
+			<p>If the T3 DoT is still active when finishing the B4 cast and you don’t have Xeno for UI, wait up to ~1 second for the MP tick. See the <a href="#append">Appendix</a> for an alternative option.</p>
 		<h6>Phase Transition</h6>
 			<img src="images/blm/phasetrans.png" />
 			<p>Use this if the enemy would die or phase before a full Fire Phase.</p>
@@ -203,9 +218,10 @@
 		<p>A hard-clipped Swiftcasted Spell is preferable to Scathe.
 	<h4>Freeze</h4>
 		<p>Only use single-target Freeze for recovery purposes. If at full MP, skip Freeze and instead cast F3.</p>
+</section>
 
-
-<br /><h3 id="recover">Recovery and Reopeners</h3><hr />
+<h3 id="recover">Recovery and Reopeners</h3><hr />
+<section>
 	<h4>Recovery</h4>
 		<p>If you die or drop Enochian, follow this list of priorities:</p>
 			<ol><li>Swiftcast B3 to regain UI3.</li>
@@ -220,9 +236,10 @@
 		<p>The Umbral Heart from Freeze allows a 5x F4 + Despair Fire Phase. Note that this is only for recovery. It is not a DPS gain, nor is it a sustainable rotation.</p>
 	<h4>Reopeners</h4>
 		<p>During downtime, use Umbral Soul to maintain UI3 with 3 hearts. From there, you can T3 and continue the rotation as normal. Use Xeno before downtime as necessary to avoid overwriting a Polyglot stack.</p>
+</section>
 
-
-<br /><h3 id="aoe">AoE Rotation (3+ Targets)</h3><hr />
+<h3 id="aoe">AoE Rotation (3+ Targets)</h3><hr />
+<section>
 	<h4>General Info</h4>
 		<p>The AoE rotation is free-flowing and should be adapted to the encounter. The same concepts of the Ice and Fire Phases apply to the AoE rotation.</p>
 		<p>The Ice Phase includes 1 filler Spell, usually Foul or T4. Unlike single-target, use procs freely rather than waiting out the proc / DoT timer. Use Sharp on T4, or on T3 single-target in preparation for adds. If possible, hold Foul or T4P until after Freeze to keep casting while waiting for MP.</p>
@@ -237,12 +254,14 @@
 	<h4>Example</h4>
 	<h5>Quad Flare (in AF3, at least 1 Umbral Heart)</h5>
 		<img src="images/blm/quadflare.png" />
+</section>
 
-<br /><h3 id="move">Movement and Uptime</h3><hr />
+<h3 id="move">Movement and Uptime</h3><hr />
+<section>
 	<p>BLM has no damaging oGCDs and a very simple rotation. To maximize dps, always be casting (ABC) and minimize uptime loss due to handling movement and mechanics.</p>
 	<h4>Slidecasting</h4>
 		<p>You can start moving when a cast is close to finishing and still have the cast complete. The timing is ~0.5s before the cast ends, but varies based on latency and hardware. Practice slidecasting on a dummy to determine your personal threshold.</p>
-		Slidecast to move short distances or dodge AoEs when you don’t have a proc or instant available. You still lose some time between casts, but it is better than not casting at all.</p>
+		<p>Slidecast to move short distances or dodge AoEs when you don’t have a proc or instant available. You still lose some time between casts, but it is better than not casting at all.</p>
 	<h4>Positioning</h4>
 		<p>Many mechanics can be handled by preemptively being where you need to be. If you wait until a mechanic starts before moving into position, you’ll feel rushed and end up burning a lot of movement options. Instead, slidecast or leverage instants to move into position at your leisure.</p>
 
@@ -259,12 +278,15 @@
 		<p>For reference, clipping LL is approximately equal to losing 5s of its buff. See <a href="#append">Appendix</a> for optimization options.</p>
 	<h4>Aetherial Manipulation and Between the Lines</h4>
 		<p>AM and BtL are useful tools for long distance movement in a short window. Slidecast or preposition instead where possible. The animation lock is highly dependent on ping and software, try not to use this after a fast F3 / B3. This should not be the primary form of movement.</p>
+</section>
 
-<br /><h3 id="sps">Spell Speed Thresholds</h3><hr />
+<h3 id="sps">Spell Speed Thresholds</h3><hr />
+<section>
 	<p>With the increase of AF and UI timers to 15 seconds, the standard rotation is doable at nearly all Spell Speeds. Play at whatever Spell Speed you find comfortable.</p>
+</section>
 
-
-<br /><h3 id="level">Leveling Rotations</h3><hr />
+<h3 id="level">Leveling Rotations</h3><hr />
+<section>
 	<p>The following is a list of the Rotations a BLM should use if they are at the listed level, be it while synced or because they are leveling.</p>
 	<h4>Single-Target</h4>
 		<dl>
@@ -308,10 +330,13 @@
 			<dd>-Same as 80. See the AOE section for a better explanation.</dd>
 		</dl>
 	<p>For all aoe, use Thundercloud procs on T2/T4 as you get them. Swift/Triple Flares. Manafont for an extra Flare. Foul after Transpose or Freeze</p>
+</section>
 
-<br /><h3 id="macro">Macros</h3><hr />
-<p>BLM doesn’t really use any macros anymore except for macroing Aetherial Manipulation. The macro for this can look like the following:</p>
-<pre>
+<h3 id="macro">Macros</h3><hr />
+<section>
+	<p>BLM doesn’t really use any macros anymore except for macroing Aetherial Manipulation. The macro for this can look like the following:</p>
+
+<pre class="macro">
 /merror off
 /ac "Aetherial Manipulation" &lt;mo&gt;
 /ac "Aetherial Manipulation" &lt;mo&gt;
@@ -331,18 +356,21 @@
 
 	<p>&lt;mo&gt; stands for mouseover and you will jump to the person your mouse points to, on either their character or the party list. The repeating lines simulate some form of queueing since macros in this game don’t queue.</p>
 	<p>You can replace &lt;mo&gt; with eg &lt;2&gt; to always jump to the 2nd person in your party list, but in general this is not recommended, unless you are absolutely sure the person is always where you want them to be, when you want them to be. The &lt;mo&gt; is way more flexible, but you need to target it.</p>
+</section>
 
+<h3 id="gear">About Gear</h3><hr />
+<section>
+	<p>Optimizing substats gives the least return on dps when compared to being proficient at your job, having high uptime, handling mechanics efficiently, etc.</p>
 
-<br /><h3 id="gear">About Gear</h3><hr />
-<p>Optimizing substats gives the least return on dps when compared to being proficient at your job, having high uptime, handling mechanics efficiently, etc.</p>
+	<p>BLM has no bad substats. Infinite resources and lack of damaging oGCDs makes Spell Speed a strong stat. More SpS can make the job feel smoother to play and make Fire Phases less strict. Aim for higher iLvl gear and get SpS to personal preference and comfort level. After that, worry about your performance rather than gear.</p>
 
-<p>BLM has no bad substats. Infinite resources and lack of damaging oGCDs makes Spell Speed a strong stat. More SpS can make the job feel smoother to play and make Fire Phases less strict. Aim for higher iLvl gear and get SpS to personal preference and comfort level. After that, worry about your performance rather than gear.</p>
+	<p>If you need mathematical backing, this sheet lists different BiS sets and can be used to determine BiS for new gear, or what the correct upgrade path is when choosing gear purchase / upgrade priority.</p>
 
-<p>If you need mathematical backing, this sheet lists different BiS sets and can be used to determine BiS for new gear, or what the correct upgrade path is when choosing gear purchase / upgrade priority.</p>
+	<p>The biggest takeaway is that as long as your gear is max iLvl and fully melded, the difference between best and worst sets for BLM is less than 1%.</p>
+</section>
 
-<p>The biggest takeaway is that as long as your gear is max iLvl and fully melded, the difference between best and worst sets for BLM is less than 1%.</p>
-
-<br /><h3 id="append">Appendix</h3><hr />
+<h3 id="append">Appendix</h3><hr />
+<section>
 	<h4>No Xeno or T3 Filler</h4>
 		<img src="images/blm/noxenofill.png" />
 		<p>A possible line if you enter UI with no Xeno and over ~12s on your DoT. Avoid hardcasting T3 in AF if choosing this line. May lead to a DPS loss if you do not have Xeno or T3P for the next UI.</p>
@@ -351,45 +379,45 @@
 	<h4>Ley Lines Optimization</h4>
 	<img src="images/blm/leylinesopti.png" />
 		<p>Under Ley Lines, you may opt to skip B4 and F1 in your rotation. This requires ~1450 SpS to execute reliably, less with instants. This requires 2 mana ticks in UI3, adjust your Ice Phase accordingly.</p>
+</section>
 
-<br /><h3 id="misc">Misc.</h3><hr />
-<h4>Changelog</h4>
-<p>
-	<dl style="margin-left:1em">
-	<dt>July 14, 2019</dd>
-		<dd>Doc is done but I must hide my powers :dab:.</dd>
-	<dt>July 15</dd>
-		<dd>Changed rotation figures to reflect filler and proc icons. Laqi-senpai and Furst-san helping edit now uwu.</dd>
-	<dt>July 17</dd>
-		<dd>Added Appendix.</dd>
-		<dd>Fix ToC, condense Weaving, Clipping, Appendix sections, move footnotes into main text, misc.</dd>
-	<dt>July 22</dd>
-		<dd>Added bold to empty GCD text.</dd>
-	<dt>August 8</dd>
-		<dd>Added Ley Lines Optimizations to Appendix.</dd>
-	<dt>August 29</dd>
-		<dd>Edited Appendix.</dd>
-	<dt>September 13</dd>
-		<dd>Change Weaving and Clipping link.</dd>
-	<dt>September 28</dd>
-		<dd>Remove text implying overwriting T3 for ice filler is good.</dd>
-	<dt>October 8</dd>
-		<dd>Added period to the end of Xenoglossy paragraph.</dd>
-	<dt>October 26</dd>
-		<dd>Remove line in AOE section saying to Hot Flare with Swift.</dd>
-	<dt>April 5, 2020</dd>
-		<dd>Added a macro section</dd>
-	<dt>April 15, 2020</dd>
-		<dd>Added a leveling rotations section</dd>
-	</dl>
-</p>
+<h3 id="misc">Misc.</h3><hr />
+<section>
+	<h4>Changelog</h4>
+		<dl>
+		<dt>July 14, 2019</dd>
+			<dd>Doc is done but I must hide my powers :dab:.</dd>
+		<dt>July 15</dd>
+			<dd>Changed rotation figures to reflect filler and proc icons. Laqi-senpai and Furst-san helping edit now uwu.</dd>
+		<dt>July 17</dd>
+			<dd>Added Appendix.</dd>
+			<dd>Fix ToC, condense Weaving, Clipping, Appendix sections, move footnotes into main text, misc.</dd>
+		<dt>July 22</dd>
+			<dd>Added bold to empty GCD text.</dd>
+		<dt>August 8</dd>
+			<dd>Added Ley Lines Optimizations to Appendix.</dd>
+		<dt>August 29</dd>
+			<dd>Edited Appendix.</dd>
+		<dt>September 13</dd>
+			<dd>Change Weaving and Clipping link.</dd>
+		<dt>September 28</dd>
+			<dd>Remove text implying overwriting T3 for ice filler is good.</dd>
+		<dt>October 8</dd>
+			<dd>Added period to the end of Xenoglossy paragraph.</dd>
+		<dt>October 26</dd>
+			<dd>Remove line in AOE section saying to Hot Flare with Swift.</dd>
+		<dt>April 5, 2020</dd>
+			<dd>Added a macro section</dd>
+		<dt>April 15, 2020</dd>
+			<dd>Added a leveling rotations section</dd>
+		</dl>
 
 	<h4>About</h4>
 		<p>This guide is currently maintained by the Mentors of the Balance Discord.</p>
 		<p>Big thank you to Caro Kann of Exodus of Primal of Earth, CaroKann#1234 on Discord; for the hard work he put into making this.</p>
 		<p>Special thanks to Laqi Thish for making the original 4.X BLM guide and providing resources to improve on BLM play. Without him, I would not be the player I am today. Also, I shamelessly stole his doc as a baseline for this one. Further thanks to Fürst Blumier for helping with the mathematical calculations and being an all-around bro.</p>
 		<p>Shoutout to every BLM on the Balance Discord.</p>
-
+</section>
 	
 </div>
 <!-- Here be where page content actually ends! -->
