@@ -1,0 +1,20 @@
+#iaddle {
+    width: 36px;
+    height: 36px;
+    background: url(icaster.png) -0px -0px;
+}
+#ilucid {
+    width: 36px;
+    height: 36px;
+    background: url(icaster.png) -216px -0px;
+}
+#isure {
+    width: 36px;
+    height: 36px;
+    background: url(icaster.png) -288px -0px;
+}
+#iswift {
+    width: 36px;
+    height: 36px;
+    background: url(icaster.png) -324px -0px;
+}

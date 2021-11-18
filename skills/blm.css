@@ -1,0 +1,300 @@
+#manip {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -0px -0px;
+}
+#between {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -48px -0px;
+}
+#blizz1 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -96px -0px;
+}
+#blizz2 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -144px -0px;
+}
+#blizz3 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -192px -0px;
+}
+#blizz4 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -240px -0px;
+}
+#convert {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -288px -0px;
+}
+#enoc {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -576px -0px;
+}
+#fire1 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -624px -0px;
+}
+#fire2 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -672px -0px;
+}
+#fire3 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -720px -0px;
+}
+#fire4 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -768px -0px;
+}
+#fireproc {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -816px -0px;
+}
+#flare {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -864px -0px;
+}
+#foul {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -912px -0px;
+}
+#freeze {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -960px -0px;
+}
+#leylines {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1008px -0px;
+}
+#manaward {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1152px -0px;
+}
+#scathe {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1200px -0px;
+}
+#sharp {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1248px -0px;
+}
+#sleep {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1296px -0px;
+}
+#thun {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1344px -0px;
+}
+#thun2 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1392px -0px;
+}
+#thun3 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1440px -0px;
+}
+#thun4 {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1488px -0px;
+}
+#thunproc {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1632px -0px;
+}
+#transpose {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1680px -0px;
+}
+#triple {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1728px -0px;
+}
+
+#xeno {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1776px -0px;
+}
+
+#despair {
+    width: 48px;
+    height: 48px;
+    background: url(blm.png) -1824px -0px;
+}
+
+/*weaving zied now */
+
+#imanip {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -0px -0px;
+}
+#ibetween {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -36px -0px;
+}
+#iblizz1 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -72px -0px;
+}
+#iblizz2 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -108px -0px;
+}
+#iblizz3 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -144px -0px;
+}
+#iblizz4 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -180px -0px;
+}
+#iconvert {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -216px -0px;
+}
+#ienoc {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -432px -0px;
+}
+#ifire1 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -468px -0px;
+}
+#ifire2 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -504px -0px;
+}
+#ifire3 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -540px -0px;
+}
+#ifire4 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -576px -0px;
+}
+#ifireproc {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -612px -0px;
+}
+#iflare {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -648px -0px;
+}
+#ifoul {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -684px -0px;
+}
+#ifreeze {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -720px -0px;
+}
+#ileylines {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -756px -0px;
+}
+#iward {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -864px -0px;
+}
+#iscathe {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -900px -0px;
+}
+#isharp {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -936px -0px;
+}
+#ithun1 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1008px -0px;
+}
+#ithun2 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1044px -0px;
+}
+#ithun3 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1080px -0px;
+}
+#ithun4 {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1116px -0px;
+}
+#ithunproc {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1224px -0px;
+}
+#itranspose {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1260px -0px;
+}
+#itriple {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1296px -0px;
+}
+#ixeno {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -1332px -0px;
+}
+#idespair {
+    width: 36px;
+    height: 36px;
+    background: url(iblm.png) -13368px -0px;
+}

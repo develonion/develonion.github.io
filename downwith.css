@@ -2,12 +2,22 @@ p {
 	margin-left: 1em; /* adds margin to paragraphs */
 }
 
+section {
+	margin-left: 1em;
+	padding-bottom: 2em;
+}
+
 img {
 	max-width: 100%; /* keep images from stretching beyond page */
+	margin-left: 1em;
 }
 
 dt {
 	font-weight: bold; /* bolds titles in descriptive lists */
+}
+
+dl {
+	margin-left: 1em;
 }
 
 #header {
@@ -15,4 +25,34 @@ dt {
 	position:-webkit-sticky; /* safari work around too */
 	top:0;
 	background:white;
+}
+
+.macro {
+	background:lightgray;
+	border-style: solid;
+	padding:10px;
+	width: 25em;
+	margin-left:1em;
+}
+
+/*Styling for the rotation windows */
+
+ul#rot li{
+	display:inline-block;
+	margin:auto;
+}
+
+ul#rot {
+	padding:24px;
+	margin:0;
+}
+
+div.rot {
+	max-width:960px;
+	background:lightgray;
+	border:solid;
+	margin:1em;
+	justify-content:center;
+	align-items:center;
+	display:inline-block;
 }
