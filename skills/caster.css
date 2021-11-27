@@ -1,24 +1,24 @@
-#iaddle {
+.iaddle {
     width: 36px;
     height: 36px;
     background: url(icaster.png) -0px -0px;
 }
-#ilucid {
+.ilucid {
     width: 36px;
     height: 36px;
     background: url(icaster.png) -216px -0px;
 }
-#isure {
+.isure {
     width: 36px;
     height: 36px;
     background: url(icaster.png) -288px -0px;
 }
-#iswift {
+.iswift {
     width: 36px;
     height: 36px;
     background: url(icaster.png) -324px -0px;
 }
-#ipot {
+.ipot {
     width: 36px;
     height: 36px;
     background: url(icaster.png) -360px -0px;
