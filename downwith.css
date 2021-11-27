@@ -27,9 +27,9 @@ article {max-width:1000px;margin:auto;}
 
 /* flex boxfor the intro/contents section*/
 div.flexcont {display:flex; flex-wrap:wrap;align-items:flex-start;}
-div.cont {min-width:256px;border-style:outset;border-radius:5px;padding:.5em;}
+div.cont {min-width:15em;border-style:outset;border-radius:.3em;padding:.5em;}
 div.aside {flex:1;font-style:italic;border-left:3px solid;margin-left:1em;}
-@media (max-width: 600px) {div.flexcont, div.cont, div.aside{flex: 100%;} div.aside{margin-top:1em;margin-left:0;}}
+@media (max-width: 40em) {div.flexcont, div.cont, div.aside{flex: 100%;} div.aside{margin-top:1em;margin-left:0;}}
 
 div.guidetitle {border-bottom: 2px solid;margin-bottom:1em;}
 
@@ -76,7 +76,7 @@ div.rot {
 	min-width: 25%;
 	background:lightgray;
 	border:outset;
-	border-radius:5px;
+	border-radius:.3em;
 	justify-content:center;
 	align-items:center;
 	display:inline-flex;
