@@ -8,6 +8,7 @@ header {
 	background:inherit;
 	margin-bottom:0;
 }
+
 span#loadheader {background:inherit;} /*makes sure that the header has the same bg color*/
 
 ul.nav, ul.nav ul {
@@ -94,10 +95,10 @@ div.rot {
 	border-radius:.3em;
 	justify-content:left;
 	align-items:center;
-	display:inline-flex;
-	overflow:auto;
+	display:inline-flex; /*i dont know why i originally used this... changing it breaks things though */
+	overflow:auto; /* adds scrollbar to longer rotations */
 	height:120px;
-	white-space: nowrap;
+	white-space: nowrap; /*prevent list from wrapping*/
 }
 div.rot ul {
 	padding:24px;
