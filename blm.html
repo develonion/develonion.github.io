@@ -6,58 +6,22 @@
 	<link rel="stylesheet" href="skills/blm.css">
 	<link rel="stylesheet" href="skills/caster.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type="text/javascript" src="jquery.js"></script> 
+    <script type="text/javascript"> 
+	$(document).ready(function(){
+	$("#loadheader").load("index.html #siteheader");
+	});
+	</script>
 </head>
 <body>
 
-<!-- Header star- oh you're reading this? have fun! -->
-<header>
-<div id="sitetitle">
-	<h1  class="title">Copied Factory</h1>
-	<span><em>A website.</em></span>
-	<span class="totop"><a href="#top">Top</a></span>
-</div>
-
- <!-- Navigation start -->
-<nav id="sitenav">
-	<h2 class="hidden">Navigation</h2>
-		<a href="index.html" title="Home Page">HOME</a>
-	<!-- Tanks --><span>[Tanks]</span>
-		<a href="pld.html" title="Paladin Guide">PLD</a>
-		<a href="war.html" title="Warrior Guide">WAR</a>
-		<a href="drk.html" title="Dark Knight Guide">DRK</a>
-		<a href="gnb.html" title="Gunbreaker Guide">GNB</a>
-	<!-- Healers --><span>[Healers]</span>
-		<a href="whm.html" title="White Mage Guide">WHM</a>
-		<a href="sch.html" title="Scholar Guide">SCH</a>
-		<a href="ast.html" title="Astrologian Guide">AST</a>
-		<a href="sge.html" title="Sage Guide">SGE</a>
-	<!-- Melees --><span>[Melee]</span>
-		<a href="mnk.html" title="Monk Guide">MNK</a>
-		<a href="drg.html" title="Dragoon Guide">DRG</a>
-		<a href="nin.html" title="Ninja Guide">NIN</a>
-		<a href="sam.html" title="Samurai Guide">SAM</a>
-		<a href="rpr.html" title="Reaper Guide">RPR</a>
-	<!-- Rangeds --><span>[Ranged]</span>
-		<a href="brd.html" title="Bard Guide">BRD</a>
-		<a href="mch.html" title="Machinist Guide">MCH</a>
-		<a href="dnc.html" title="Dancer Guide">DNC</a>
-	<!-- Casters --><span>[Casters]</span>
-		<a href="blm.html" title="Black Mage Guide">BLM</a>
-		<a href="smn.html" title="Summoner Guide">SMN</a>
-		<a href="rdm.html" title="Red Mage Guide">RDM</a>
-		<abbr title="Do not ask me about Blue Mage.">*</abbr>
-	<!-- Other --><span>[Other]</span>
-		<a href="tips.html" title="General Combat Tips">TIPS</a>
-		<a href="faq.html" title="About and FAQ">FAQ</a>
-</nav>
-
-
-	<!-- Navigation End -->
-</header>
-<!-- Header Ends -->
+<!--load the header from the index page -->
+<span id="loadheader"></span>
 
 <!-- Here be where page content actually starts! Anything not between these comments should be the same on every page. -->
-<article>
+<article role="main">
 <div class="guidetitle">
 <h2 class="title">Black Mage Guide</h2>
 <span>|<em>Updated: 1:58 PM 11/18/2021</em></span>
@@ -67,15 +31,15 @@
 <div class="cont">
 	<h3>Contents</h3>
 	<ol>
-		<li><a href="#bis">Best-in-Slot Gear</a>
-		<li><a href="#open">Openers</a>
-		<li><a href="#abs">Ability Overview</a>
+		<li><a href="#bis">Best-in-Slot Gear</a></li>
+		<li><a href="#open">Openers</a></li>
+		<li><a href="#abs">Ability Overview</a></li>
 		<li><a href="#rot">Rotation</a><ol>
-			<li><a href="#rotdef">Single Target</a>
-			<li><a href="#rotaoe">AoE Rotation</a>
-			<li><a href="#rotrec">Recovery</a></li>
-		<li><a href="#level">Leveling Rotations</a></ol>
-		<li><a href="#append">Appendix</a>
+			<li><a href="#rotdef">Single Target</a></li>
+			<li><a href="#rotaoe">AoE Rotation</a></li>
+			<li><a href="#rotrec">Recovery</a></li></ol></li>
+		<li><a href="#level">Leveling Rotations</a></li>
+		<li><a href="#append">Appendix</a></li>
 	</ol>
 </div>
 <div class="aside">
@@ -84,18 +48,17 @@
 </div>
 </section>
 
-
 <section><a id="bis" class="anchor"></a>
 	<h3>Best-in-Slot Gear</h3>
 		<p> BIS for Black Mage currently comes in two main flavors: high spell speed or high crit. Which one you want to use is up to how you like to play.</p>
-		<h4>High Spell Speed</h4>
+	<h4>High Spell Speed</h4>
 		<iframe class="gear"
 			title="High Spellspeed" 
 			src="https://etro.gg/embed/gearset/1c64d9a9-892b-48a8-b7d1-f760839d659c">
 		</iframe>
 	<h4>High Crit</h4>
 		<iframe class="gear"
-			title="High Crit "
+			title="High Crit"
 			src="https://etro.gg/embed/gearset/b470c4c6-6f4a-47c8-8162-52ac09494e02">
 		</iframe>
 </section>
@@ -114,7 +77,26 @@
 	<h4>JP Opener</h4>
 		<div class="center"><div class="rot">
 			<ul class="rot">
-			<li class="isharp"><li class="fire3"><li class="ienoc"><li class="thun3"><li class="fire4"><li class="itriple"><li class="fire4"><li class="ipot"><li class="fire4"><li class="ileylines"><li class="fire4"><li class="iswift"><li class="despair"><li class="convert"><li class="fire4"><li class="despair"><li class="blizz3"><li class="isharp"><li class="thunproc"><li class="blizz4">
+			<li class="isharp"></li>
+			<li class="fire3"></li>
+			<li class="ienoc"></li>
+			<li class="thun3"></li>
+			<li class="fire4"></li>
+			<li class="itriple"></li>
+			<li class="fire4"></li>
+			<li class="ipot"></li>
+			<li class="fire4"></li>
+			<li class="ileylines"></li>
+			<li class="fire4"></li>
+			<li class="iswift"></li>
+			<li class="despair"></li>
+			<li class="convert"></li>
+			<li class="fire4"></li>
+			<li class="despair"></li>
+			<li class="blizz3"></li>
+			<li class="isharp"></li>
+			<li class="thunproc"></li>
+			<li class="blizz4"></li>
 			</ul>
 		</div></div>
 		<p><em>Precast: Sharp at -12s and F3 at -4s.</em></p>

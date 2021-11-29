@@ -1,14 +1,29 @@
-html{background-color:#b5b2a4; height:100%;}
+html {background-color:#b5b2a4; height:100%;}
 
-body {background-color:#c7c3b0; max-width:1300px;margin:0 auto 0 auto;padding:1em; padding-bottom:0; min-height:100%;}
+body {background-color:#c7c3b0; max-width:80em;margin:0 auto 0 auto;padding:1em; padding-bottom:0; min-height:100%;}
 
 header {
 	position:sticky; /* sticks it to the top */
-	position:-webkit-sticky; /* safari work around too */
 	top:0; /* this sets the position of it 0px from top of page*/
 	background:inherit;
 	margin-bottom:0;
 }
+span#loadheader {background:inherit;} /*makes sure that the header has the same bg color*/
+
+ul.nav, ul.nav ul {
+	list-style-type:none;
+	display:inline;
+	margin:0;
+	padding:0;
+
+}
+ul.nav li{
+	display:inline;
+	font-family:serif;
+}
+
+
+img {max-width:100%;}
 
 .hidden {display:inline;visibility:hidden;overflow:hidden;height:0;width:0;position:absolute;}
 
@@ -19,10 +34,10 @@ a.anchor {display:block;position:relative;top:-120px;visibility:hidden;}
 .title {display:inline} 
 
 /*setting the max-widths for larger screens*/
-div#sitetitle {max-width:1300px;margin:auto;}
-nav#sitenav {max-width:1300px;margin:auto;border-style:solid none solid none;border-width:2px;padding:4px;}
+div#sitetitle {max-width:100%;margin:auto;}
+nav#sitenav {max-width:100%;margin:auto;border-style:solid none solid none;border-width:2px;padding:4px;}
 span.totop {float:right;margin-right:2em;}
-article {max-width:1000px;margin:auto;}
+article {max-width:55em;margin:auto;}
 
 
 /* flex boxfor the intro/contents section*/
@@ -84,6 +99,7 @@ div.rot {
 div.rot ul {
 	padding:24px;
 	margin:auto;
+	font-size:0;
 }
 div.rot li {
 	display:inline-block;
