@@ -1,6 +1,6 @@
-html {background-color:#b5b2a4; height:100%;}
+html {background-color:#ccc8b1; height:100%; font-family:sans-serif;}
 
-body {background-color:#c7c3b0; max-width:80em;margin:0 auto 0 auto;padding:1em; padding-bottom:0; min-height:100%;}
+body {background-color:#d1cdb7; max-width:80em;margin:0 auto 0 auto;padding:0; min-height:100%; color:#454138;}
 
 header {
 	position:sticky; /* sticks it to the top */
@@ -38,11 +38,13 @@ a.anchor {display:block;position:relative;top:-120px;visibility:hidden;}
 .title {display:inline} 
 
 /*setting the max-widths for larger screens*/
-div#sitetitle {max-width:100%;margin:auto;}
-nav#sitenav {max-width:100%;border-style:solid none solid none;border-width:2px;padding:4px;margin:0;}
+div#sitetitle {max-width:100%;margin:auto;padding:1em;}
+nav#sitenav {padding: 1em;max-width:100%;border-style:solid none solid none;border-width:2px;margin:0;}
 span.totop {float:right;margin-right:2em;}
 article {max-width:55em;margin:auto;}
 
+h1 a {color:inherit;text-decoration:none;}
+h1 a:hover{text-decoration:underline;}
 
 /* flex boxfor the intro/contents section*/
 div.flexcont {display:flex; flex-wrap:wrap;align-items:flex-start;}
@@ -54,7 +56,7 @@ div.guidetitle {border-bottom: 2px solid;margin-bottom:1em;}
 
 /* section styling */
 article {
-	background-color:#d1cdb7;
+	background-color:#dcd8c0;
 	padding:1em;
 	margin-top:0;
 	margin-bottom:0;
@@ -129,7 +131,7 @@ span.s{
 
 /*new nav styling*/
 
-nav#sitenav{padding:0;}
+nav#sitenav{padding: 0 1em 0 1em}
 ul.nav{margin:0;padding:0;}
 
 ul.nav li{
@@ -137,7 +139,10 @@ ul.nav li{
 	margin:0;
 }
 
-
+li.dropbutton a{
+display:block;
+height: 100%;
+width:100%;}
 
 li.dropbutton ul{
 	display:none;
@@ -147,32 +152,41 @@ li.dropbutton ul{
 	margin-top:4px;
 	padding:0px;
 	font-size:0;
-	border-top: 2px solid #000000;
-	border-bottom: 2px solid #000000;
 }
+
 li.dropbutton{
-	padding:4px;
+	padding:4px 0 4px 0;
+	text-align:center;
+	
 }
 
 li.dropbutton:hover {
 	background-color:#454138;
 	color:#bab5a1;
+	cursor:pointer;
 }
-
 
 li.dropbutton:hover ul{
 	display:block;
+	color: black;
 }
 
 li.dropbutton ul li{
-	padding:4px;
+	padding:0px;
 	margin:0;
 	font-size:initial;
+	display:block;
+	width:3em;
+	height:1.6em;
+	line-height:1.6em;
+	border-bottom: 2px solid #454138;
 }
 
 li.dropbutton ul li:hover{
-	padding:4px;
-	margin:0;
-	font-size:initial;
 	background-color:#dcd8c0;
+}
+
+div#sitetitle {
+	background:#454138;
+	color:#bab5a1;
 }
