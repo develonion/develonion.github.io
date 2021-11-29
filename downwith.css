@@ -12,7 +12,9 @@ header {
 
 span#loadheader {background:inherit;} /*makes sure that the header has the same bg color*/
 
-ul.nav, ul.nav ul {
+/*old navigation styling */
+
+/* ul.nav, ul.nav ul {
 	list-style-type:none;
 	display:inline;
 	margin:0;
@@ -23,7 +25,7 @@ ul.nav li{
 	display:inline;
 	font-family:serif;
 }
-
+ */
 
 img {max-width:100%;}
 
@@ -37,7 +39,7 @@ a.anchor {display:block;position:relative;top:-120px;visibility:hidden;}
 
 /*setting the max-widths for larger screens*/
 div#sitetitle {max-width:100%;margin:auto;}
-nav#sitenav {max-width:100%;margin:auto;border-style:solid none solid none;border-width:2px;padding:4px;}
+nav#sitenav {max-width:100%;border-style:solid none solid none;border-width:2px;padding:4px;margin:0;}
 span.totop {float:right;margin-right:2em;}
 article {max-width:55em;margin:auto;}
 
@@ -124,3 +126,53 @@ span.s{
 
 .center {display:block;width:100%;text-align:center;} /*center those windows*/
 
+
+/*new nav styling*/
+
+nav#sitenav{padding:0;}
+ul.nav{margin:0;padding:0;}
+
+ul.nav li{
+	display:inline-block;
+	margin:0;
+}
+
+
+
+li.dropbutton ul{
+	display:none;
+	position: absolute;
+	background-color:#c7c3b0;
+	z-index:3;
+	margin-top:4px;
+	padding:0px;
+	font-size:0;
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+}
+li.dropbutton{
+	padding:4px;
+}
+
+li.dropbutton:hover {
+	background-color:#454138;
+	color:#bab5a1;
+}
+
+
+li.dropbutton:hover ul{
+	display:block;
+}
+
+li.dropbutton ul li{
+	padding:4px;
+	margin:0;
+	font-size:initial;
+}
+
+li.dropbutton ul li:hover{
+	padding:4px;
+	margin:0;
+	font-size:initial;
+	background-color:#dcd8c0;
+}
