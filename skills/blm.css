@@ -138,6 +138,11 @@
     height: 46px;
     background: url(blmfull.png) -0px -414px;
 }
+.triple {
+    width: 44px;
+    height: 46px;
+    background: url(blm.png) -44px -414px;
+}
 .foul {
     width: 44px;
     height: 46px;

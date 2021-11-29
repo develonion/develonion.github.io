@@ -97,17 +97,23 @@ div.rot {
 	align-items:center;
 	display:inline-flex; /*i dont know why i originally used this... changing it breaks things though */
 	overflow:auto; /* adds scrollbar to longer rotations */
-	height:120px;
+	height:90x;
 	white-space: nowrap; /*prevent list from wrapping*/
 }
 div.rot ul {
-	padding:24px;
-	margin:auto;
+	padding:12px;
 	font-size:0;
 }
 div.rot li {
+	margin: 2px;
 	display:inline-block;
-	margin:auto;
 }
+
+div.rot li.i {
+	margin: -4px;
+	display:inline-block;
+	transform:scale(0.75);
+}
+
 .center {display:block;width:100%;text-align:center;} /*center those windows*/
 
