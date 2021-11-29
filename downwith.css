@@ -7,6 +7,7 @@ header {
 	top:0; /* this sets the position of it 0px from top of page*/
 	background:inherit;
 	margin-bottom:0;
+	z-index:999;
 }
 
 span#loadheader {background:inherit;} /*makes sure that the header has the same bg color*/
@@ -113,6 +114,12 @@ div.rot li.i {
 	margin: -4px;
 	display:inline-block;
 	transform:scale(0.75);
+}
+
+span.s{
+	display:inline-block;
+	transform:scale(.5);
+	margin:-12px -10px -16px -12px;
 }
 
 .center {display:block;width:100%;text-align:center;} /*center those windows*/
