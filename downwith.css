@@ -92,9 +92,12 @@ div.rot {
 	background:lightgray;
 	border:outset;
 	border-radius:.3em;
-	justify-content:center;
+	justify-content:left;
 	align-items:center;
 	display:inline-flex;
+	overflow:auto;
+	height:120px;
+	white-space: nowrap;
 }
 div.rot ul {
 	padding:24px;
