@@ -63,8 +63,8 @@ nav.articlenav {
 	margin-bottom:1em;
 	flex-shrink:0;
 }
-nav.articlenav ul{margin:0 0.2em 0 0.2em;padding:0;list-style:none;border-top: 2px solid #B5B09C;border-bottom:2px solid #B5B09C;}
-nav.articlenav li{padding:0.5em 1em 0.5em 1em;margin-right:-1em;margin-left:-1em;font-size:1.2em;}
+nav.articlenav ul{margin:0 0.2rem 0 0.2rem;padding:0;list-style:none;border-top: 2px solid #B5B09C;border-bottom:2px solid #B5B09C;}
+nav.articlenav li{padding:0.5rem 1rem 0.5rem 1rem;margin-right:-.7rem;margin-left:-.7rem;font-size:1.2rem;}
 nav.articlenav li:hover{background:#47443B;color:#D7D2B5;}
 nav.articlenav a{text-decoration:none;}
 /* i dont know if i like this... */
