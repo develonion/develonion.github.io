@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>PLD | Copied Factory</title>
+	<link rel="stylesheet" href="downwith.css">
+	<link rel="stylesheet" href="stylish.css">
+	<link rel="stylesheet" href="skills/pld.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+<header>
+<p class="todo">there should be a header here someday...</p>
+</header>
+
+<main>
+<article>
+
+
+<div style="margin-bottom:1.1em;"><h1 class="title"><img src="ui/paladin.png" style="height:1.4rem;margin-bottom:-.2rem;"> Paladin</h1></div>
+<hr>
+<div class="flex">
+<nav class="articlenav">
+	<!-- <h1>Contents</h1> -->
+	<ul>
+		<a href="#skills"><li>❖ Actions and Traits</li></a>
+		<a href="#open"><li>❖ Openers</li></a>
+		<a href="#rot"><li>❖ Rotation</li></a>
+		<a href="#"><li>❖ Link</li></a>
+		<a href="#"><li>❖ Link</li></a>
+		<a href="#"><li>❖ Link</li></a>
+		<a href="#"><li>❖ This Link is Longer</li></a>
+	</ul>
+</nav>
+<blockquote>
+<p class="timestamp"><em>Updated: 5:40 PM 1/17/2022</em></p>
+<p>Paladin is a tank with a simple linear rotation that alternates between physical melee and magical ranged phases. With interesting utility in skills like Clemency and Cover, plus the fun of using Hallowed Ground to take zero damage even during some of the hardest hitting attacks, paladin is one of the easiest tanks to pick up but can still take a lot of practice to master!</p>
+</blockquote>
+</div>
+
+<section id="skills" class="pad"><h1 class="section">Actions and Traits</h1>
+<p>Descriptions are written as the action exists at level 90. Some actions change with traits as you level up, so while leveling your actions may lack certain effects.
+All actions and traits are listed in the order that they are learned. Actions that reference another will include links to the other skills.
+Recast times are taken at base skillspeed and spellspeed. Raising these attributes will shorten the recast times of weaponskills and spells respectively.</p>
+
+<!-- Skill tables -->
+<table id="fastblade">
+	<tr><th>Lv.01</th><th colspan="3">Fast Blade</th><td colspan="1">Weapon<wbr>skill</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t fastblade"></span></td>
+		<td>Range: 3y</td><td>Radius: 0y</td><td>Cast: Instant</td><td>Recast: 2.5s</td></tr>
+	<tr><td colspan="4">Light hitting physical attack that begins your melee combo. Combo's into <a href="#riotblade">Riot Blade</a>.</td></tr>
+</table>
+
+<table id="tankmastery">
+	<tr><th>Lv.01</th><th colspan="3">Tank Mastery</th><td colspan="1">Trait</td></tr>
+	<tr><td rowspan="1" class="icon"><span class="t tankmastery"></span></td>
+		<td colspan="4">Passively reduces all damage taken by 20%. Also gives bonus HP based on vitality and bonus damage based on strength.</td></tr>
+</table>
+
+<table id="fightorflight">
+	<tr><th>Lv.02</th><th colspan="3">Fight or Flight</th><td colspan="1">Ability</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t fightorflight"></span></td>
+		<td>Range: 0y</td><td>Radius: 0y</td><td>Cast: Instant</td><td>Recast: 60s</td></tr>
+	<tr><td colspan="4">Increases your physical damage by 25% for 25s.</td></tr>
+</table>
+
+<table id="riotblade">
+	<tr><th>Lv.04</th><th colspan="3">Riot Blade</th><td colspan="1">Weapon<wbr>skill</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t riotblade"></span></td>
+		<td>Range: 3y</td><td>Radius: 0y</td><td>Cast: Instant</td><td>Recast: 2.5s</td></tr>
+	<tr><td colspan="4">Moderate hitting physical attack. Combo's from <a href="#fastblade">Fast Blade</a> which deals inceased damage and restores MP. Combo's into <a href="#rageofhalone">Rage of Halone</a>, <a href="#royalauthority">Royal Authority</a>, or <a href="#goringblade">Goring Blade</a>.</td></tr>
+</table>
+
+<table id="totaleclipse">
+	<tr><th>Lv.06</th><th colspan="3">Total Eclipse</th><td colspan="1">Weapon<wbr>skill</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t totaleclipse"></span></td>
+		<td>Range: 0y</td><td>Radius: 5y</td><td>Cast: Instant</td><td>Recast: 2.5s</td></tr>
+	<tr><td colspan="4">AoE weaponskill centered around you. Combo's into <a href="#prominence">Prominence</a>.</td></tr>
+</table>
+
+<table id="clemency">
+	<tr><th>Lv.58</th><th colspan="3">Clemency<td colspan="1">Spell</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t clemency"></span></td>
+		<td>Range: 30y</td><td>Radius: 0y</td><td>Cast: 1.5s</td><td>Recast: 2.5s</td></tr>
+	<tr><td colspan="4">Restores targets HP by a large amount. If the target is a party member also heals you by 50% of the amount healed. <strong>MP Cost: 2000</strong></td></tr>
+</table>
+
+
+<p class="todo">finish adding other skills.</p>
+</section>
+
+<!-- BIS Section example....
+<section><a id="bis" class="anchor"></a>
+	<h1>Best-in-Slot Gear</h1>
+		<p> BIS for Black Mage currently comes in two main flavors: high spell speed or high crit. Which one you want to use is up to how you like to play.</p>
+	<details>
+	<summary>High Spell Speed</summary>
+		<iframe class="gear"
+			title="High Spellspeed" 
+			src="https://etro.gg/embed/gearset/1c64d9a9-892b-48a8-b7d1-f760839d659c">
+		</iframe>
+	</details>
+	<details>
+	<summary>High Crit</summary>
+		<iframe class="gear"
+		title="High Crit"
+		src="https://etro.gg/embed/gearset/b470c4c6-6f4a-47c8-8162-52ac09494e02">
+		</iframe>
+	</details>
+</section>
+ -->
+
+<section id="open" class="pad"><h1 class="section">Openers</h1>
+	<p>Paladin has two two useful opener variations. The first starts your rotation off with the Fight or Flight window, getting as many cooldowns off within raid buffs as possible and setting you right on your standard rotation loop. The second one jumps into your Requiscat window which can help align your ranged attacks with times that you need to disengage from the boss. The Fight or Flight opener is recommended in most cases. </p>
+	<p>As of writing we are still very early on in the expansion. As such openers can and will change slightly over time due to more refined testing as well as changing GCD speeds that align better with current raid tier mechanics.</p>
+
+	<section><h1>Fight or Flight First</h1>
+		<div class="rot">
+			<ul class="rot">
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="i fightorflight" title="Fight or Flight"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="i tincturestrength" title="Tincture of Strenth"></li>
+			<li class="goringblade" title="Goring Blade"></li>
+			<li class="i circleofscorn" title="Circle of Scorn"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="i expiacion" title="Expiacion"></li>
+			<li class="i intervene" title="Intervene"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="i requiescat" title="Requiescat"></li>
+			<li class="i intervene" title="Intervene"></li>
+			<li class="royalauthority" title="Royal Authority"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="goringblade" title="Goring Blade"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="i circleofscorn" title="Circle of Scorn"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="i expiacion" title="Expiacion"></li>
+			<li class="confiteor" title="Expiacion"></li>
+			<li class="bladeoffaith" title="Blade of Faith"></li>
+			<li class="bladeoftruth" title="Blade of Truth"></li>
+			<li class="bladeofvalor" title="Blade of Valor"></li>
+			</ul>
+		</div>
+		<p><em>Precast Holy Spirit at 2s.</em></p>
+		<p>We use a precasted Holy Spirit to pull the boss and go immediately into our standard rotation loop with our Fight or Flight phase. The potion weaved after Riot Blade will last until Confiteor is cast. As always, ensure that you're fitting both Goring Blades under Fight or Flight.</p>
+	</section>
+	<section><h1>Requiescat First</h1>
+		<div class="rot">
+			<ul class="rot">
+			<li class="i fightorflight" title="Fight or Flight"></li>
+			<li class="i tincturestrength" title="Tincture of Strenth"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="i circleofscorn" title="Circle of Scorn"></li>
+			<li class="i expiacion" title="Expiacion"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="i requiescat" title="Requiescat"></li>
+			<li class="i intervene" title="Intervene"></li>
+			<li class="goringblade" title="Goring Blade"></li>
+			<li class="i intervene" title="Intervene"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="confiteor" title="Expiacion"></li>
+			<li class="bladeoffaith" title="Blade of Faith"></li>
+			<li class="bladeoftruth" title="Blade of Truth"></li>
+			<li class="bladeofvalor" title="Blade of Valor"></li>
+			</ul>
+		</div>
+		<p><em>Precast Fight or Flight at 16 or 19 seconds, Tincture of Strength at 4s, and Holy Spirit at 2s.</em></p>
+		<p>Despite it's name the Requiscat first opener still uses Fight or Flight at the beginning, this time prepull to allow it to get that first Goring Blade buffed but still be off cooldown for when it's time for your next Fight or Flight phase.</p>
+		<p>Wether you want to precast Fight or Flight at 16 or 19 seconds depends on which rotation loop you'll be using. If you want the full 3 Atonements for the 64s, precast at 16s. For the 2 Atonement, 61s loop, precast at 19s. These timings have Fight or Flight come off cooldown right as it's needed.</p>
+	</section>
+		<p>Both openers are followed immediately by the Unbuffed phase of your rotation. Check the Rotation section for more information on the difference between the 61s and 64s loops.</p>
+</section>
+
+
+<section id="rot" class="pad"><h1 class="section">Rotation</h1>
+	<p>The paladin rotation is a minute long loop with 3 "phases" that you cycle around. First the Fight or Fight phase where you aim to get as many of your GCD and oGCD skills fit within the Fight or Flight buff as possible. Then the Requiescat phase where you expend all your Requiescat stacks, finishing with your powerful Confiteor combo. Lastly you have an "Unbuffed" phase where you bide you time with a Royal Authority combo and Atonements until Fight or Flight is off cooldown allowing you to start the loop over again.</p><p> This full loop can come out to ~64s for a standard loop, or ~61s for a shorter loop that fits better into buff windows. This is discussed more in the Unbuffed Phase section.</p>
+	
+	<section><h1>Fight or Flight Phase</h1>
+		<div class="rot">
+			<ul class="rot">
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="i fightorflight" title="Fight or Flight"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="goringblade" title="Goring Blade"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="i requiescat" title="Requiescat"></li>
+			<li class="royalauthority" title="Royal Authority"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="goringblade" title="Goring Blade"></li>
+			</ul>
+		</div>
+		<p>In this phase your goal is to fit as many of your damaging oGCD abilities into the Fight or Flight buff window as possible. Following one of the standard openers this just means using those abilities as they come off cooldown as soon as possible and making sure to hold both Intervene stacks for this window as well when fight mechanics do not require the extra movement.</p>
+		<p>Your other main goal is to ensure that you always fit 11 GCD's into the buff window. This allows both Goring Blades in this phase to benefit from the damage increase. To accomplish this its extremely important to make sure that your Fight or Flight cast is weaved in the second half of the turn of your GCD as well as that you never clip into your next GCD while weaving your other oGCD's during the buff.</p>
+		<p>Lower recast times from having higher skillspeeds can make the 11 GCD window less tight but will result in lower overall dps from the loss other substats in exchange for skillspeed. Thus it's important to practice your weave timings as much as possible to find the best recast time for your latency.</p>
+		<p>Requiescat will come off cooldown later when using the Requiescat first openers. Use it as soon as it is off cooldown as you do other cooldowns.</p>
+	</section>
+	
+	<section><h1>Requiescat Phase </h1>
+		<div class="rot">
+			<ul class="rot">
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="holyspirit" title="Holy Spirit"></li>
+			<li class="confiteor" title="Expiacion"></li>
+			<li class="bladeoffaith" title="Blade of Faith"></li>
+			<li class="bladeoftruth" title="Blade of Truth"></li>
+			<li class="bladeofvalor" title="Blade of Valor"></li>
+			</ul>
+		</div>
+		<p>Starting immediately after your last buffed goring blade you first cast 4 Holy Spirits followed by your Confiteor combo. You should already have the Requiescat buff up from using it during your Fight or Flight phase, but if for some reason you do not you can weave Requiescat between Goring Blade and your first Holy Spirit cast without clipping.</p>
+		<p>It's very important to pay attention to your Requiescat stacks during this phase. Make sure that you don't lose your Confiteor combo by either using all 5 stacks on other spells or by letting the buff time out. If the boss is going to become untargetable for longer than your buff would last or is about to die it is better to use Confiteor immediately rather than lose a cast of it.</p>
+		<p>Circle of Scorn and Expiacion should also come off cooldown during this phase and should be weaved as soon as possible. If using a Requiescat opener they will not be up till the Unbuffed phase though. Try not to use Intervene at this time unless you will have 2 charges for an extended time or if the movement is required. Otherwise it is better to save them for the next Fight or Flight phase.</p>
+	</section>
+	
+	<section><h1>Unbuffed Phase</h1>
+		<div class="rot">
+			<ul class="rot">
+			<li class="fastblade" title="Fast Blade"></li>
+			<li class="riotblade" title="Riot Blade"></li>
+			<li class="royalauthority" title="Royal Authority"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			<li class="atonement" title="Atonement"></li>
+			</ul>
+		</div>
+		<p>The shortest of phases, the unbuffed phase simply passes time between the end of your Requiescat phase and the next Fight or Flight phase. With the DoT from Blade of Valor ticking you will skip applying Goring Blade and instead go right into a Royal Authority combo. After using the Atonement stacks generated you will go back to the start of the Fight or Flight phase and begin the loop again.</p>
+		
+		<h1>61s or 64s Loop</h1>
+			<p>While the shortest, the Unbuffed phase is also where you have a choice that will affect the rest of your rotation. You can choose to use all three atonement stacks that you generate here, or you can use only two of them.</p>
+			<p>Using all three stacks here makes the entire rotation loop take around 64 seconds. This means that Fight or Flight will spend an extra GCD off cooldown before it is pressed as well as slowly misaligning your buff windows with your party's 60s and 120s buffs. Depending on various encounter specific variables this can cause a loss of DPS.</p>
+			<p>Using only two of your atonement stacks in your Unbuffed phase brings your rotation loop down to around 61 seconds. This gets Fight or Flight used again a GCD sooner and will help keep your buffs inline with your party's at the cost of an unbuffed atonement. This can be a DPS gain depending on the encounter.</p>
+			<p><strong>Which should you use?</strong> Dropping the third Atonement for the 61s loop is generally recommended. That being said, as with all small job optimizations, the difference in DPS between the two options will not be as large of a DPS difference as playing well, maintaining uptime on the boss, and executing the rest of your rotation correctly.</p>
+	</section>
+</section>
+</article>
+
+<p class="todo">Anything below this line is just filler text for the sake of style testing and stuff.</p><hr>
+
+<article><h2>Dummy Text</h2><!-- Dummy Text -->
+<section class="pad">
+<h1 class="section">Ability Overview</h1>
+<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+</section>
+
+<section class="pad">
+<h1 class="section">Rotation</h1>
+	<section>
+	<h1>Single Target</h1>
+	<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+	<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+	<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+	<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+	<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+	</section>
+
+	<section>
+	<h1>AoE Rotation</h1>
+	<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+	<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+	<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+	<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+	<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+	</section>
+
+	<section>
+	<h1>Single Target</h1>
+	<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+	<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+	<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+	<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+	<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+	</section>
+</section>
+
+<section class="pad">
+<h1 class="section">Leveling Rotations</h1>
+<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+</section>
+
+<section class="pad">
+<h1 class="section">Appendix</h1>
+<p>Praesent et lobortis tellus, vitae eleifend est. Suspendisse interdum gravida libero. Nulla varius justo sit amet mauris convallis rhoncus. Quisque at fringilla nisl, non eleifend felis. Curabitur id sapien eu libero commodo suscipit in vel massa. In sollicitudin viverra tellus in rhoncus. Proin nec nisi nisi. Nullam quis lorem nibh. Suspendisse nisl dui, rhoncus ut varius nec, sagittis et elit.</p>
+
+<p>Fusce accumsan sapien sapien, fringilla pulvinar mauris fringilla eget. Donec leo elit, elementum non libero sed, congue viverra magna. Mauris elementum rutrum quam, vel maximus mi facilisis in. Cras lorem lectus, interdum vitae orci sed, varius viverra purus. Pellentesque vel eros vel dui egestas euismod. Duis eu erat est. Phasellus sit amet vestibulum lectus, vitae lobortis erat. Proin consectetur ligula ac egestas pharetra.</p>
+
+<p>Quisque vel congue nunc, quis venenatis elit. Suspendisse cursus leo eget molestie vehicula. Aenean eleifend sem a accumsan ultrices. Integer aliquam tempus augue vitae vehicula. Mauris suscipit quam est, eu finibus quam porta quis. Nunc tortor erat, dignissim sit amet dui at, efficitur faucibus mi. Praesent hendrerit sed massa a interdum. Morbi finibus sit amet ligula at sollicitudin.</p>
+
+<p>Mauris nec neque purus. Curabitur eu sapien eget eros pretium facilisis vitae laoreet est. In laoreet nisi vitae justo consectetur lacinia. Aliquam feugiat ipsum enim, eu finibus diam finibus quis. Cras consequat purus ullamcorper, aliquet neque eget, cursus nibh. Pellentesque suscipit nisl libero, nec congue lacus ornare eget. Phasellus vel cursus tortor, imperdiet tempor ante. Nunc ultricies pretium lorem, non tristique sapien tincidunt nec. Morbi ultrices sem vel eros iaculis tincidunt. Ut eros erat, dapibus rutrum est quis, imperdiet sodales est. Quisque eget viverra turpis. Donec vulputate eros neque, ac feugiat ligula aliquet eu. Cras nisl nisi, commodo in finibus at, viverra sit amet nibh. Etiam dignissim a felis eget ullamcorper. Duis porta rutrum mauris, vitae pellentesque orci luctus in. Donec facilisis dapibus dui, eget efficitur ex pretium vel.</p>
+
+<p>Etiam lobortis, neque ultricies luctus maximus, velit mi egestas dui, non malesuada elit diam non ipsum. Nulla sagittis augue justo, sed porttitor risus lobortis quis. Sed vel velit vehicula, euismod nulla eget, mattis neque. Vestibulum lectus nulla, ornare in feugiat vel, iaculis euismod massa. Duis et ex tristique, fermentum tellus a, ultrices sem. Donec pellentesque egestas nunc, sed mollis arcu hendrerit quis. Morbi sapien leo, bibendum eu justo eu, feugiat vulputate purus. Nullam ut fringilla odio. Proin sodales, elit eget tristique pretium, erat tellus finibus massa, at vulputate dui tellus ut orci. Vivamus ac est vitae sem viverra malesuada semper sit amet lacus. Etiam finibus porta suscipit. Cras blandit, lacus nec aliquet accumsan, ex dui consectetur nisl, a dapibus nibh nulla quis leo. Nulla porttitor magna lectus, eu condimentum diam viverra ac.</p>
+</section>
+</article>
+
+
+</main>
+</body>
+</html> 

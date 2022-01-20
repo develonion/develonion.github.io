@@ -1,192 +1,103 @@
-html {background-color:#ccc8b1; height:100%; font-family:sans-serif;}
-
-body {background-color:#d1cdb7; max-width:80em;margin:0 auto 0 auto;padding:0; min-height:100%; color:#454138;}
-
-header {
-	position:sticky; /* sticks it to the top */
-	top:0; /* this sets the position of it 0px from top of page*/
-	background:inherit;
-	margin-bottom:0;
-	z-index:999;
+html {padding:0;margin:0;
 }
 
-span#loadheader {background:inherit;} /*makes sure that the header has the same bg color*/
-
-/*old navigation styling */
-
-/* ul.nav, ul.nav ul {
-	list-style-type:none;
-	display:inline;
-	margin:0;
-	padding:0;
-
-}
-ul.nav li{
-	display:inline;
-	font-family:serif;
-}
- */
-
-img {max-width:100%;}
-
-.hidden {display:inline;visibility:hidden;overflow:hidden;height:0;width:0;position:absolute;}
-
-/*allows content links to account for sticky header */
-a.anchor {display:block;position:relative;top:-120px;visibility:hidden;}
-
-/*lets the subtitle and dates sit beside the main title */
-.title {display:inline} 
-
-/*setting the max-widths for larger screens*/
-div#sitetitle {max-width:100%;margin:auto;padding:1em;}
-nav#sitenav {padding: 1em;max-width:100%;border-style:solid none solid none;border-width:2px;margin:0;}
-span.totop {float:right;margin-right:2em;}
-article {max-width:55em;margin:auto;}
-
-h1 a {color:inherit;text-decoration:none;}
-h1 a:hover{text-decoration:underline;}
-
-/* flex boxfor the intro/contents section*/
-div.flexcont {display:flex; flex-wrap:wrap;align-items:flex-start;}
-div.cont {min-width:15em;border-style:outset;border-radius:.3em;padding:.5em;}
-div.aside {flex:1;font-style:italic;border-left:3px solid;margin-left:1em;}
-@media (max-width: 40em) {div.flexcont, div.cont, div.aside{flex: 100%;} div.aside{margin-top:1em;margin-left:0;}}
-
-div.guidetitle {border-bottom: 2px solid;margin-bottom:1em;}
-
-/* section styling */
-article {
-	background-color:#dcd8c0;
-	padding:1em;
-	margin-top:0;
-	margin-bottom:0;
-	border-style: none ridge ridge ridge;
-	border-color: #9e9d94;
+body {
+min-height:calc(100vh - 2em); /*allows body background color to be full length*/
+max-width:55em;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:0;
+margin-top:0;
+padding:2em;
+padding-top:1em;
+padding-bottom:1em;
 }
 
-h3 {border-bottom-style:double;} /*h3 is main header for sections.*/
-p, li {font-family:sans-serif;} /*sans undertale */
-
-
-iframe.gear {
-	width:100%;
-	min-width:300px;
-	height:450px;
+/*red text for making notes*/
+.todo{
+color:crimson;
+background-color:black;
+font-weight:bold;
+text-transform:uppercase;
+text-align:justify;
+text-align-last:center;
 }
-
-
-/* this currently only comes up in one spot... */
-dt {font-weight: bold;} /* bolds titles in descriptive lists */
-dl {margin-left: 1em;} /*indents subitems in descriptive lists */
-
-
-
-.macro {
-	background:lightgray;
-	border-style: solid;
-	padding:10px;
-	width: 25em;
-	margin-left:1em;
-}
-
-/*Styling for the rotation windows */
-div.rot {
-	margin:auto;
-	text-align:left;
-	max-width:100%;
-	min-width: 25%;
-	background:lightgray;
-	border:outset;
-	border-radius:.3em;
-	justify-content:left;
-	align-items:center;
-	display:inline-flex; /*i dont know why i originally used this... changing it breaks things though */
-	overflow:auto; /* adds scrollbar to longer rotations */
-	height:90x;
-	white-space: nowrap; /*prevent list from wrapping*/
-}
-div.rot ul {
-	padding:12px;
-	font-size:0;
-}
-div.rot li {
-	margin: 2px;
-	display:inline-block;
-}
-
-div.rot li.i {
-	margin: -4px;
-	display:inline-block;
-	transform:scale(0.75);
-}
-
-span.s{
-	display:inline-block;
-	transform:scale(.5);
-	margin:-12px -10px -16px -12px;
-}
-
-.center {display:block;width:100%;text-align:center;} /*center those windows*/
-
-
-/*new nav styling*/
-
-nav#sitenav{padding: 0 1em 0 1em}
-ul.nav{margin:0;padding:0;}
-
-ul.nav li{
-	display:inline-block;
-	margin:0;
-}
-
-li.dropbutton a{
-display:block;
-height: 100%;
-width:100%;}
-
-li.dropbutton ul{
-	display:none;
-	position: absolute;
-	background-color:#c7c3b0;
-	z-index:3;
-	margin-top:4px;
-	padding:0px;
-	font-size:0;
-}
-
-li.dropbutton{
-	padding:4px 0 4px 0;
+.center{
 	text-align:center;
-	
+}
+header {
 }
 
-li.dropbutton:hover {
-	background-color:#454138;
-	color:#bab5a1;
-	cursor:pointer;
+/*what does this do?*/
+summary {
+cursor:pointer
 }
 
-li.dropbutton:hover ul{
-	display:block;
-	color: black;
+/*settings for displaying skill info tables*/
+
+table, td, th{border:1px solid darkslategray;}
+table {
+width:100%;max-width:50rem;
+margin-left:auto;margin-right:auto;
+margin-bottom:0.2rem;
+}
+th {text-align: left;}
+td.icon{width:42px;vertical-align:top;}
+th, td{padding:.25em;}
+
+
+/*These settings are for the rotation windows
+as well as inline sprites */
+div.rot {
+margin:auto;
+text-align:left;
+max-width:100%;
+min-width:25%;
+justify-content:left;
+align-items:center;
+display:inline-flex;
+overflow:auto;
+white-space:nowrap;
+
+border:outset;
+border-radius:.3em;
 }
 
-li.dropbutton ul li{
-	padding:0px;
-	margin:0;
-	font-size:initial;
-	display:block;
-	width:3em;
-	height:1.6em;
-	line-height:1.6em;
-	border-bottom: 2px solid #454138;
+div.rot ul {
+padding:12px;
+font-size:0
 }
 
-li.dropbutton ul li:hover{
-	background-color:#dcd8c0;
+div.rot li { /*normal rotation icons*/
+margin:2px;
+display:inline-block
 }
 
-div#sitetitle {
-	background:#454138;
-	color:#bab5a1;
+div.rot li.i { /*rotation icons for weaving */
+margin:-3px;
+display:inline-block;
+transform:scale(0.75)
+}
+
+span.n { /*regular sized inline icons*/
+display:inline-block;
+margin:2px
+}
+
+span.s { /*small icons for inline text*/
+display:inline-block;
+transform:scale(.5);
+margin:-12px -10px -16px -12px
+}
+
+span.t { /*icons for tables*/
+margin:3px 2px 0px 2px;
+display:inline-block;
+}
+
+/*this specifically applies to etro embeds*/
+iframe.gear {
+width:100%;
+min-width:300px;
+height:450px
 }

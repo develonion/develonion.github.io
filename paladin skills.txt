@@ -1,0 +1,155 @@
+!!Paladin Skill Write Up
+
+Descriptions are written as the action exists at level 90. Some actions change with traits as you level up, so while leveling your actions may lack certain effects.
+All actions and traits are listed in the order that they are learned. Actions that reference another will include links to the other skills.
+Recast times are taken at base skillspeed and spellspeed. Rasing these attributes will shorten the recast times of weaponskills and spells respectivly.
+
+Shield Bash - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+
+Lv. 1
+	Fast Blade - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Light hitting physical attack that begins your melee combo. Combo's into Riot Blade.
+	Tank Mastery - Trait
+		Passively reduces all damage taken by 20%. Also gives bonus HP based on vitality and bonus damage based on strength.
+Lv. 2
+	Fight or Flight - Ability; Range: 0y; Radius: 0y; Cast: Instant; Recast: 60s;
+		Increases your physical damage by 25% for 25s.
+Lv. 4
+	Riot Blade - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Moderate hitting physical attack. Combo's from Fast Blade which deals inceased damage and restores MP. Combo's into Rage of Halone, Royal Authority, or Goring Blade.
+Lv. 6
+	Total Eclipse - Weaponskill; Range: 0y; Radius: 5y; Cast: Instant; Recast: 2.5s;
+		AoE weaponskill centered around you. Combo's into Prominence.
+Lv. 10
+	Shield Bash - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Light hitting physical attack that also stuns the target for 6s. Useful if you need to stun an enemy but Low Blow is on cooldown. Should be avoided in favor of more damaging actions as much as possible.
+	Iron Will - Ability; Range: 0y; Radius: 0y; Cast: Instant; Recast: 10s;
+		Increases your enmity generation until the action is used again. Your most important ability as a tank, you tank stance. Having this ability active is what allows you to hold aggro on mobs in dungeons, raids, and all other content where you don't want your party members getting attacked.
+Lv. 15
+	Shield Lob - Weaponskill; Range: 20y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Light hitting ranged attack that also generates a little extra enmity. Can be used to grab additional mobs in dungeons and raids without having to run all the way to them.
+Lv. 26
+	Rage of Halone - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Hard hitting physical attack. Combos from Riot Blade which deals increased damage. Becomes Royal Authority at level 60.
+Lv. 30
+	Spirits Within - Ability; Range: 3y; Radius: 0y; Cast: Instant; Recast: 30s;
+		Medium hitting attack that restores MP. Becomes Expiacion at level 86.
+Lv. 35
+	Sheltron - Ability; Range: 0y; Radius: 0y; Cast: Instant; Recast: 30s;
+		Blocks all incoming attacks for 6s. (20% damage reduction.) Becomes Holy Sheltron at level 82. Costs 50 Oath Gauge to cast.
+	Oath Mastery - Trait
+		Increases Oath Guage by 5 every time you land an auto attack. Oath Gauge is used to execute the actions Sheltron, Holy Sheltron, Intervention, and Cover.
+Lv. 38
+	Sentinel - Ability; Range: 0y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Reduces damage taken by 30% for 15s.
+Lv. 40
+	Prominence - Weaponskill; Range: 0y; Radius: 5y; Cast: Instant; Recast: 2.5s;
+		AoE weaponskill centered around you. Combo's from Total Eclipse which deals increased damage and restores MP.
+Lv. 45
+	Cover - Ability; Range: 10y; Radius: 0y; Cast: Instant; Recast: 120s;
+		For 12s all damage dealt to your targeted party member will instead go to you. The party member has to stay within the 10y range of the attack for this effect to work. Damage taken for party member can be reduced with your damage reduction cooldowns as normal. Some forms of damage will ignore Cover and still deal damage to it's intended target. Costs 50 Oath Gauge to cast.
+Lv. 50
+	Circle of Scorn - Weaponskill; Range: 0y; Radius: 5y; Cast: Instant; Recast: 2.5s;
+		AoE ability that deals light damage and applies a DoT to all targets hit for 15s.
+	Hallowed Ground - Ability; Range: 00y; Radius: 0y; Cast: Instant; Recast: 420s;
+		For 10s most attacks will deal no damage to you.
+Lv. 54
+	Goring Blade - Weaponskill; Range: 0y; Radius: 5y; Cast: Instant; Recast: 2.5s;
+		Medium hitting physical attack. Combo's from Riot Blade which increaes damage and applys a DoT to the target for 21s. This DoT cannot be stacked with the one applied by Blade of Valor and will overwrite it when used.
+Lv. 56
+	Divine Veil - Ability; Range: 0y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Applies the Divine Veil buff to yourself for 30s. If your HP is restored by a healing spell the buff will be removed from you and a shield for 10% of your maximum HP will be applied to party members within 15y, as well as a moderate heal to those affected. Healing <i>abilities</i>, such as assize or benediction, will NOT trigger Divine Veil. Only healing <i>spells</i> such as Cure or Adloquium.
+Lv. 58
+	Clemency - Spell; Range: 30y; Radius: 0y; Cast: 1.5s; Recast: 2.5s; MP Cost: 2000;
+		Restores targets HP by a large amount. If the target is a party member also heals you by 50% of the amount healed.
+	Chivalry - Trait
+		Adds the MP restoration effect to Riot Blade and Spirits Within.
+Lv. 60
+	Royal Authority - Weaponskill; Range: 3y; Radius: 0y; Cast: Instant; Recast: 2.5s;
+		Hard hitting physical attack. Combo's from Riot Blade which increases damage and grants 3 stacks of Sword Oath for 30s or until all 3 stacks are used. Replaces Rage of Halone.
+	Rage of Halone Mastery - Trait
+		Upgrades Rage of Halone to Royal Authority.
+Lv. 62
+	Intervention - Ability; Range: 20y; Radius: 0y; Cast: Instant; Charge Time: 30s;
+		Reduces target party member's damage taken by 10% for 8s. If Rampart or Sentinel are active on yourself damage is reduced by an additional 10%. Grants Knight's Resolve to the target which reduces damage by another 10% for 4s. Grants Knight's Beneditiction to the target which restores HP overtime for 12s. Costs 50 Oath Gauge to cast.
+Lv. 64
+	Holy Spirit - Spell; Range: 25y; Radius: 0y; Cast: 1.5s; Recast: 2.5s; MP Cost: 1000;
+		Deals moderate magic damage and restores own HP. When used during Requiescat damage is increased and cast time is instant.
+	Divine Magic Mastery - Trait
+		Halves MP costs of spells and prevents spells from being interrupted by damage.
+Lv. 66
+	Enhanced Prominence - Trait
+		Adds MP restoration effect to Prominence.
+Lv. 68
+	Requiescat - Ability; Range: 10y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Deals moderate magic damage and grants 5 stacks of Requiescat, which increases the potency of Holy Spirit and Holy Circle and makes all spells instant cast for 30s or until all 5 stacks are used.
+Lv. 70
+	Passage of Arms - Ability; Range: 10y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Increases your own block rate by 10%. Party members standing in the effect behind you will take 85% less damage. Lasts 18s or until your move or act. The damage reduction for the party will linger for a small amount of time after the effect is canceled.
+Lv. 72
+	Holy Circle - Spell; Range: 0y; Radius: 5y; Cast: 1.5s; Recast: 2.5s; MP Cost: 1000;
+		AoE magic attack that deals light damage and restores own HP. When used during Requiescat damage is increased and cast time is instant.
+Lv. 74
+	Intervene - Ability; Range: 20y; Radius: 0y; Cast: Instant; Charge Time: 30s;
+		Rushes to the target enemy's side and deals light physical damage. Can hold up to 2 chargers.
+	Enhanced Sheltron - Trait
+		Extends sheltrons duration.
+Lv. 76
+	Atonement - Weaponskill; Range: 0y; Radius: 5y; Cast: Instant; Recast: 2.5s;
+		Heavy hitting physical attack that also restores MP. Can only be used with stacks of Sword Oath.
+	Sword Oath - Trait
+		Grants three stacks of Sword Oath after using a combo'd Royal Authority. These stacks last for 30s and are used to cast Attonment.
+Lv. 80
+	Confiteor - Spell; Range: 25y; Radius: 5y; Cast: 1.5s; Recast: 2.5s; MP Cost: 1000;
+		Heavy hitting AoE magic attack. Can only be used under Requiescat and removes all remaining stacks of Requiescat when cast. Combo's into Blade of Faith.
+Lv. 82
+	Holy Sheltron - Ability; Range: 10y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Blocks incoming attacks for 8s. Grants Knight's Resolve which reduces damage taken by 15% for 4s. Grants Knight's Benediction which restores HP over time for 12s. Costs 50 Oath Guage to cast.
+	Sheltron Mastery - Trait
+		Upgrades Sheltron to Holy Sheltron.
+	Enhanced Intervention - Trait
+		Extends the duration of Intervention and adds the Knight's Resolve and Knight's Benediction effects.
+Lv. 84
+	Divine Magic Mastery II - Trait
+		Adds the healing effect to Holy Spirit and Holy Circle.
+	Melee Mastery - Trait
+		Increases the potency of Fast Blade, Riot Blade, Royal Authority, Holy Spirit, and Atonement.
+Lv. 86
+	Expiacion - Ability; Range: 10y; Radius: 0y; Cast: Instant; Recast: 120s;
+		Medium hitting AoE phsyical attack that restores MP. Replaces Spirits Within.
+	Spirits Within Mastery - Trait
+		Upgrades Spirit Within to Expiacion.
+Lv. 88
+	Enhanced Divine Veil - Trait
+		Adds the healing effect to Divine Veil.
+Lv. 90
+	Blade of Faith - Spell; Range: 25y; Radius: 5y; Cast: 1.5s; Recast: 2.5s;
+		Lighter hitting AoE magic attack that restores MP. Combo's from Confiteor. Combo's into Blade of Truth.
+	Blade of Truth - Spell; Range: 25y; Radius: 5y; Cast: 1.5s; Recast: 2.5s;
+		Moderate hitting AoE magic attack that restores MP. Combo's from Blade of Faith. Combo's into Blade of Valor.
+	Blade of Valor - Spell; Range: 25y; Radius: 5y; Cast: 1.5s; Recast: 2.5s;
+		Heavy hitting AoE magic attack that restores MP and applys a DoT to all enemies hit. This DoT cannot stack with the DoT applied by Goring Blade and will overwrite it when used. Combo's from Blade of Faith which.
+
+
+
+
+<table id="skill">
+	<tr><th>Lv.01</th><th colspan="3">Skillth><td colspan="1">Weapon<wbr>skill</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t skill"></span></td>
+		<td>Range: 3y</td><td>Radius: 0y</td><td>Cast: Instant</td><td>Recast: 2.5s</td></tr>
+	<tr><td colspan="4">Description</td></tr>
+</table>
+
+<table id="trait">
+	<tr><th>Lv.01</th><th colspan="3">Trait</th><td colspan="1">Trait</td></tr>
+	<tr><td rowspan="1" class="icon"><span class="t trait"></span></td>
+		<td colspan="4">Description</td></tr>
+</table>
+
+<table id="Ability">
+	<tr><th>Lv.02</th><th colspan="3">Ability</th><td colspan="1">Ability</td></tr>
+	<tr><td rowspan="2" class="icon"><span class="t fightorflight"></span></td>
+		<td>Range: 0y</td><td>Radius: 0y</td><td>Cast: Instant</td><td>Recast: 60s</td></tr>
+	<tr><td colspan="4">Description</td></tr>
+</table>
+	
