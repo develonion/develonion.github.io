@@ -1,5 +1,5 @@
+header{margin-left:-2em;margin-right:-.5em;}
 
-header{margin-left:-2em;margin-right:-2em;}
 nav.sitenav{
 	border-bottom:20px solid #47443B;
 	border-image:url("ui/border.png") 27 repeat;
@@ -10,28 +10,14 @@ nav.sitenav{
 }
 
 img.menuicon{height:1.4rem;margin-bottom:-.2rem;}
-h2.menuactive{
+
+h2.menu{
 	width:8em;
 	font-size:1.2em;
-	background:#47443B;
-	color:#D7D2B5;
-	padding:0.3em .3em .9em 0.3em;
-	margin-right:0.5em;
-	margin-bottom:0;
-	vertical-align:text-top;
-	text-transform:uppercase;
-	font-weight:lighter;
-	display:inline-block;
-	white-space: nowrap ;}
-	
-h2.menuinactive{
-	width:8em;
-	font-size:1.2em;
-	background:#B1AC98;
-	color:#47443B;
 	padding:0.3em .3em .3em 0.3em;
 	margin-right:0.5em;
 	margin-bottom:0;
+	margin-top:0;
 	vertical-align:text-top;
 	text-transform:uppercase;
 	font-weight:lighter;
@@ -39,7 +25,37 @@ h2.menuinactive{
 	white-space: nowrap ;
 }
 
-h2.menuinactive:hover{
+h2.active{
 	background:#47443B;
 	color:#D7D2B5;
+	padding-bottom:.9em;
+}
+/*when screen is narrow make the active tab the same height
+as the others for better consitancy when they start wrapping*/
+@media (max-width:46em){
+	h2.active{padding-bottom:.3em;}
+	h2.menu{margin-bottom:.6em;}}
+
+h2.inactive{
+	background:#B1AC98;
+	color:#47443B;
+}
+
+h2.inactive:hover{
+	background:#47443B;
+	color:#D7D2B5;
+}
+
+h1.articletitle{
+	display:inline-block;
+	text-transform:uppercase;
+	font-size:2.5em;
+	font-weight:lighter;
+	text-shadow:6px 6px 1px #B1AC98;
+	letter-spacing:0.1em;
+}
+h2.subtitle{
+	display:inline-block;
+	font-size:1.25em;
+	font-weight:lighter;
 }
