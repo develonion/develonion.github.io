@@ -1,5 +1,5 @@
-html {padding:0;margin:0;
-}
+/**** [Settings for Site Layout] ****/
+html {padding:0;margin:0;}
 
 body {
 min-height:calc(100vh - 2em); /*allows body background color to be full length*/
@@ -25,29 +25,10 @@ text-align-last:center;
 .center{
 	text-align:center;
 }
-header {
-}
 
-/*what does this do?*/
-summary {
-cursor:pointer
-}
+/***Rotation Window and Sprite Icons***/
 
-/*settings for displaying skill info tables*/
-
-table, td, th{border:1px solid darkslategray;}
-table {
-width:100%;max-width:50rem;
-margin-left:auto;margin-right:auto;
-margin-bottom:0.2rem;
-}
-th {text-align: left;}
-td.icon{width:42px;vertical-align:top;}
-th, td{padding:.25em;}
-
-
-/*These settings are for the rotation windows
-as well as inline sprites */
+/* Rotation Container */
 div.rot {
 margin:auto;
 text-align:left;
@@ -58,31 +39,21 @@ align-items:center;
 display:inline-flex;
 overflow:auto;
 white-space:nowrap;
-
 border:outset;
 border-radius:.3em;
 }
 
+/*adds padding and makes sure text doesnt move sprites*/
 div.rot ul {
 padding:12px;
 font-size:0
 }
-
-div.rot li { /*normal rotation icons*/
-margin:2px;
-display:inline-block
-}
-
-div.rot li.i { /*rotation icons for weaving */
-margin:-3px;
-display:inline-block;
-transform:scale(0.75)
-}
-
-span.n { /*regular sized inline icons*/
-display:inline-block;
-margin:2px
-}
+/*normal rotation icons*/
+div.rot li {margin:2px;display:inline-block}
+/*rotation icons for weaving */
+div.rot li.i {margin:-3px;display:inline-block;transform:scale(0.75)}
+ /*regular sized inline icons*/
+span.n {display:inline-block;margin:2px}
 
 span.s { /*small icons for inline text*/
 display:inline-block;
@@ -90,7 +61,7 @@ transform:scale(.5);
 margin:-12px -10px -16px -12px
 }
 
-span.t { /*icons for tables*/
+span.t { /*icons for skillcards*/
 margin:3px 2px 0px 2px;
 display:inline-block;
 }

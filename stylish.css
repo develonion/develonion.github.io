@@ -15,12 +15,12 @@ body {
 		linear-gradient(to right, #C8C3AB 1px, transparent 1px),
 		linear-gradient(to bottom, #C8C3AB 1px, transparent 1px);
 	box-shadow:2px 0px 1px #6E7060;}
-section {}
 section.pad {
 	padding:1em;
 	margin-bottom:1em;
 	background:#DAD4BB;
-	box-shadow: 2px 2px 1px #6E7060;}
+	/* box-shadow: 2px 2px 1px #6E7060; */
+	}
 h1.title{
 	background:#47443B;
 	color:#D7D2B5;
@@ -37,9 +37,8 @@ h1.section{
 	padding-left:0.5em;
 	margin-bottom:initial;
 	font-weight:lighter;}
-table {background:#DAD4BB;box-shadow:1px 1px 1px #6E7060;}
 div.rot {background:#50504A;}
-
+span.nowrap {white-space:nowrap;}
 
 a:link{color:#404205;}
 a:visited{color:#404205;}
@@ -49,7 +48,7 @@ a:hover{color:#5f6308;}
 
 /* i swear on my life, never use flex boxes again */
 
-*.flex{
+.flex{
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-start;
@@ -75,10 +74,11 @@ blockquote{
 	display:inline-block;
 	flex:1;
 	flex-grow:1;
-	min-width:63%;
+	min-width:55%;
 	margin-top:0;
 	margin-right:0;
-	box-shadow: 2px 2px 1px #6E7060;}
+	/* box-shadow: 2px 2px 1px #6E7060; */
+}
 blockquote:before{
 	content: '';
 	position: absolute;

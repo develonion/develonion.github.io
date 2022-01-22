@@ -1,6 +1,7 @@
 header{margin-left:-2em;margin-right:-.5em;}
 
 nav.sitenav{
+	border: none;
 	border-bottom:20px solid #47443B;
 	border-image:url("ui/border.png") 27 repeat;
 	padding:0;
@@ -32,7 +33,7 @@ h2.active{
 }
 /*when screen is narrow make the active tab the same height
 as the others for better consitancy when they start wrapping*/
-@media (max-width:46em){
+@media (max-width:47.5rem){
 	h2.active{padding-bottom:.3em;}
 	h2.menu{margin-bottom:.6em;}}
 
@@ -53,9 +54,43 @@ h1.articletitle{
 	font-weight:lighter;
 	text-shadow:6px 6px 1px #B1AC98;
 	letter-spacing:0.1em;
+	margin-top:.25em;
+	margin-bottom:0;
 }
 h2.subtitle{
 	display:inline-block;
 	font-size:1.25em;
 	font-weight:lighter;
 }
+
+
+/*Skill Card Styling*/
+
+div.skillcard{
+	border:1px solid #47443B;
+	padding:.5em;
+	margin:.5em;
+}
+
+div.skillcard span { /*icons for skillcards*/
+margin-right:.5em;
+display:inline-block;
+float:left;
+}
+
+div.skillcard h1{
+	background:#47443B;
+	color:#D7D2B5;
+	margin: -.5em -.5em;
+	margin-bottom:0;
+	padding:0.3em;
+	font-size:1.1rem;
+	font-weight:lighter;
+}
+div.skillcard hr{
+	margin:0;
+	border-top:1px solid #B1AC98;
+}
+div.skillcard p{
+	margin:.25em 0;
+	}

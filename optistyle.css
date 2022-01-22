@@ -1,0 +1,292 @@
+html {
+background:#9D9880;
+background-image:linear-gradient(to right,#98937B 1px,transparent 1px),linear-gradient(to bottom,#98937B 1px,transparent 1px);
+background-size:6px 6px;
+color:#50504A;
+font-family:Arial,Helvetica,sans-serif;
+letter-spacing:.03rem;
+margin:0;
+padding:0;
+}
+
+body {
+background:#CDC8B0;
+background-image:linear-gradient(to right,#C8C3AB 1px,transparent 1px),linear-gradient(to bottom,#C8C3AB 1px,transparent 1px);
+background-size:6px 6px;
+box-shadow:2px 0 1px #6E7060;
+margin:0 auto;
+max-width:55em;
+min-height:calc(100vh - 2em);
+padding:2em;
+padding-bottom:1em;
+padding-top:1em;
+}
+
+.todo {
+background-color:#000;
+color:#dc143c;
+font-weight:700;
+text-align:justify;
+text-align-last:center;
+text-transform:uppercase;
+}
+
+.center {
+text-align:center;
+}
+
+table,td,th {
+border:1px solid #2f4f4f;
+}
+
+table {
+background:#DAD4BB;
+box-shadow:1px 1px 1px #6E7060;
+margin-bottom:.2rem;
+margin-left:auto;
+margin-right:auto;
+max-width:50rem;
+width:100%;
+}
+
+th {
+text-align:left;
+}
+
+td.icon {
+vertical-align:top;
+width:42px;
+}
+
+th,td {
+padding:.25em;
+}
+
+div.rot {
+align-items:center;
+background:#50504A;
+border:outset;
+border-radius:.3em;
+display:inline-flex;
+justify-content:left;
+margin:auto;
+max-width:100%;
+min-width:25%;
+overflow:auto;
+text-align:left;
+white-space:nowrap;
+}
+
+div.rot ul {
+font-size:0;
+padding:12px;
+}
+
+div.rot li {
+display:inline-block;
+margin:2px;
+}
+
+div.rot li.i {
+display:inline-block;
+margin:-3px;
+transform:scale(0.75);
+}
+
+span.n {
+display:inline-block;
+margin:2px;
+}
+
+span.s {
+display:inline-block;
+margin:-12px -10px -16px -12px;
+transform:scale(.5);
+}
+
+span.t {
+display:inline-block;
+margin:3px 2px 0;
+}
+
+iframe.gear {
+height:450px;
+min-width:300px;
+width:100%;
+}
+
+section.pad {
+background:#DAD4BB;
+box-shadow:2px 2px 1px #6E7060;
+margin-bottom:1em;
+padding:1em;
+}
+
+h1.title {
+background:#47443B;
+color:#D7D2B5;
+display:inline;
+font-weight:lighter;
+padding:.25em .8em .8em .25em;
+text-transform:uppercase;
+vertical-align:text-top;
+}
+
+h1.section {
+background:#47443B;
+color:#D7D2B5;
+font-weight:lighter;
+margin:-.85em -.86em -.85em -.85em;
+margin-bottom:initial;
+padding:.3em;
+padding-left:.5em;
+}
+
+a:hover {
+color:#5f6308;
+}
+
+.flex {
+align-items:flex-start;
+display:flex;
+flex-wrap:wrap;
+margin-top:0;
+}
+
+nav.articlenav {
+background:#DAD4BB;
+box-shadow:2px 2px 1px #6E7060;
+flex-shrink:0;
+margin-bottom:1em;
+padding:.5em;
+}
+
+nav.articlenav ul {
+border-bottom:2px solid #B5B09C;
+border-top:2px solid #B5B09C;
+list-style:none;
+margin:0 .2rem;
+padding:0;
+}
+
+nav.articlenav li {
+font-size:1.2rem;
+margin-left:-.7rem;
+margin-right:-.7rem;
+padding:.5rem 1rem;
+}
+
+nav.articlenav li:hover {
+background:#47443B;
+color:#D7D2B5;
+}
+
+nav.articlenav a {
+text-decoration:none;
+}
+
+blockquote {
+background:#DAD4BB;
+box-shadow:2px 2px 1px #6E7060;
+display:inline-block;
+flex:1;
+flex-grow:1;
+margin-right:0;
+margin-top:0;
+min-width:63%;
+padding:1em;
+position:relative;
+}
+
+blockquote:before {
+border:solid #8A8570;
+border-width:0 .2rem 0 .6rem;
+bottom:0;
+content:'';
+height:100%;
+left:-1.5rem;
+margin-left:0;
+position:absolute;
+top:0;
+width:.3rem;
+}
+
+header {
+margin-left:-2em;
+margin-right:-.5em;
+}
+
+nav.sitenav {
+border-bottom:20px solid #47443B;
+border-image:url(ui/border.png) 27 repeat;
+display:inline-block;
+padding:0;
+padding-left:1.5em;
+width:100%;
+}
+
+img.menuicon {
+height:1.4rem;
+margin-bottom:-.2rem;
+}
+
+h2.menu {
+display:inline-block;
+font-size:1.2em;
+font-weight:lighter;
+margin-bottom:0;
+margin-right:.5em;
+margin-top:0;
+padding:.3em;
+text-transform:uppercase;
+vertical-align:text-top;
+white-space:nowrap;
+width:8em;
+}
+
+h2.active {
+background:#47443B;
+color:#D7D2B5;
+padding-bottom:.9em;
+}
+
+a:link,a:visited {
+color:#404205;
+}
+
+@media (max-width:46em) {
+h2.active {
+padding-bottom:.3em;
+}
+
+h2.menu {
+margin-bottom:.6em;
+}
+}
+
+h2.inactive {
+background:#B1AC98;
+color:#47443B;
+}
+
+h2.inactive:hover {
+background:#47443B;
+color:#D7D2B5;
+}
+
+h1.articletitle {
+display:inline-block;
+font-size:2.5em;
+font-weight:lighter;
+letter-spacing:.1em;
+margin-bottom:0;
+margin-top:.25em;
+text-shadow:6px 6px 1px #B1AC98;
+text-transform:uppercase;
+}
+
+h2.subtitle {
+display:inline-block;
+font-size:1.25em;
+font-weight:lighter;
+}
