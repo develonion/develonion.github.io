@@ -1,13 +1,16 @@
 header{margin-left:-2em;margin-right:-.5em;}
 
 nav.sitenav{
-	border: none;
 	border-bottom:20px solid #47443B;
 	border-image:url("ui/border.png") 27 repeat;
 	padding:0;
 	padding-left:1.5em;
 	display:inline-block;
 	width:100%;
+	/*these are here to fix a mobile problem*/
+	border-top:none;
+	border-right:none;
+	border-left:none;
 }
 
 img.menuicon{height:1.4rem;margin-bottom:-.2rem;}

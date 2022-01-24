@@ -39,9 +39,10 @@ align-items:center;
 display:inline-flex;
 overflow:auto;
 white-space:nowrap;
-border:outset;
+border:2px outset #50504A;
 border-radius:.3em;
-}
+background:#50504A;}
+
 
 /*adds padding and makes sure text doesnt move sprites*/
 div.rot ul {
