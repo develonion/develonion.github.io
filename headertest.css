@@ -8,9 +8,9 @@ nav.sitenav{
 	display:inline-block;
 	width:100%;
 	/*these are here to fix a mobile problem*/
-	border-top:none;
-	border-right:none;
-	border-left:none;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
 }
 
 img.menuicon{height:1.4rem;margin-bottom:-.2rem;}
