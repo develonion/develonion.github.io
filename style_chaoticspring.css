@@ -1,0 +1,220 @@
+/**** Site Layout Settings ****/
+html {
+	padding:0;margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing: 0.03rem;
+	color:#6E6969;
+	background:#AA9297;
+	/*Adds grid to background*/
+	background-size: 6px 6px;
+ 	background-image:
+		linear-gradient(to right, #8A857020 1px, transparent 1px),
+		linear-gradient(to bottom, #8A857020 1px, transparent 1px);}
+
+body {
+/*allows body background color to be full length*/
+	min-height:calc(100vh - 2em);
+	max-width:55em;
+	margin-left:auto;margin-right:auto;margin-bottom:0;margin-top:0;
+	padding:2em;padding-top:1em;padding-bottom:1em;
+	background:#D6BEC3;
+	/*grid pattern*/
+	background-size: 6px 6px;
+	background-image:
+		linear-gradient(to right, #50504A10 1px, transparent 1px),
+		linear-gradient(to bottom, #50504A10 1px, transparent 1px);}
+
+/* Link Styling */
+a:link{color:#623031;}
+a:visited{color:#623031;}
+a:hover{color:#7E3434;}
+/* Misc Styles */
+.center{text-align:center;}
+.nowrap {white-space:nowrap;}
+.todo{
+color:crimson;
+background-color:black;
+font-weight:bold;
+text-transform:uppercase;
+text-align:justify;
+text-align-last:center;}
+
+/*** Site Header Styling ***/
+header{margin-left:-2em;margin-right:-.5em;}
+/* Container + Bottom Border */
+nav.sitenav{
+	border-bottom:20px solid #6E6969;
+	border-image:url("ui/border.png") 27 repeat;
+	border-width:0 0 20px;
+	padding:0;
+	padding-left:1.5em;
+	display:inline-block;
+	width:100%;}
+/* Main Button Styling */
+h2.menu{
+	width:8em;
+	font-size:1.2em;
+	padding:0.3em .3em .3em 0.3em;
+	margin-right:0.5em;
+	margin-bottom:0;
+	margin-top:0;
+	vertical-align:text-top;
+	text-transform:uppercase;
+	font-weight:lighter;
+	display:inline-block;
+	white-space: nowrap ;}
+/* Active Page Button */
+h2.active{
+	background:#6E6969;
+	color:#D6BEC3;
+	padding-bottom:.9em;}
+/* Inactive Page Button */
+h2.inactive{background:#BEAAAE;color:#6E6969;}
+/*Hover for Background Change*/
+h2.inactive:hover{background:#6E6969;color:#DEC2C7;}
+/* Sizing for Menu Icons */
+img.menuicon{height:1.4rem;margin-bottom:-.2rem;}
+/* When screen is narrow this make the active tab the same height
+as the others for better consitancy when they start wrapping. */
+@media (max-width:47.5rem){
+	h2.active{padding-bottom:.3em;}
+	h2.menu{margin-bottom:.6em;}}
+
+/*** Artlcle Styling ***/
+/* Article Title */
+h1.articletitle{
+	display:inline-block;
+	text-transform:uppercase;
+	font-size:2.5em;
+	font-weight:lighter;
+	text-shadow:6px 6px 1px #BEAAAE;
+	letter-spacing:0.1em;
+	margin-top:.25em;
+	margin-bottom:0;}
+	
+h2.subtitle{
+	display:inline-block;
+	font-size:1.25em;
+	font-weight:lighter;}
+	
+/** Article Navigation **/	
+nav.articlenav {
+	background:#E0C7CE;
+	box-shadow: 2px 2px 1px #9D888C;
+	padding:.5em;
+	margin-bottom:1em;
+	flex-shrink:0;}
+	
+nav.articlenav ul{
+	margin:0 0.2rem 0 0.2rem;
+	padding:0;
+	list-style:none;
+	border-top:2px solid #BEAAAE;
+	border-bottom:2px solid #BEAAAE;}
+	
+nav.articlenav li{
+	padding:0.5rem 1rem 0.5rem 1rem;
+	margin-right:-.7rem;margin-left:-.7rem;
+	font-size:1.2rem;}
+	
+nav.articlenav li:hover{background:#6E6969;color:#E0C7CE;}
+
+nav.articlenav a{text-decoration:none;}
+
+/*Flex Container for Nav and Summary*/
+.flex{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:flex-start;
+	margin-top:0em;}
+	
+/*Summary Container*/
+blockquote{
+	background:#E0C7CE;
+	padding:1em;
+	position:relative;
+	display:inline-block;
+	flex:1;
+	flex-grow:1;
+	min-width:55%;
+	margin-top:0;
+	margin-right:0;}
+	
+blockquote:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -1.5rem;
+	bottom: 0;
+	height: 100%;
+	width: 0.3rem;
+	border: solid #9D888C;
+	border-width: 0 0.2rem 0 0.6rem;
+	margin-left:0;}
+
+/* Top Level Sections */
+section.pad {
+	padding:1em;
+	margin-bottom:1em;
+	background:#E0C7CE;}
+/* TL-Section Titles */	
+h1.section{
+	background:#6E6969;
+	color:#E0C7CE;
+	margin:-0.85em -0.86em -0.85em -0.85em;
+	padding:0.3em;
+	padding-left:0.5em;
+	margin-bottom:initial;
+	font-weight:lighter;}
+
+/***Rotation Window and Sprite Icons***/
+/** Rotation Container **/
+div.rot {
+margin:auto;
+text-align:left;
+max-width:100%;
+min-width:25%;
+justify-content:left;
+align-items:center;
+display:inline-flex;
+overflow:auto;
+white-space:nowrap;
+border:2px outset #6E6969;
+border-radius:.3em;
+background:#6E6969;}
+/*adds padding and makes sure text doesnt move sprites*/
+div.rot ul {padding:12px;font-size:0}
+/*normal rotation icons*/
+div.rot li {margin:2px;display:inline-block}
+/*rotation icons for weaving */
+div.rot li.i {margin:-3px;display:inline-block;transform:scale(0.75)}
+/*regular sized inline icons*/
+span.n {display:inline-block;margin:2px}
+/*small icons for inline text*/
+span.s {display:inline-block;transform:scale(.5);margin:-12px -10px -16px -12px}
+
+/*** Skill Card Styling ***/
+div.skillcard{
+	border:1px solid #6E6969;
+	padding:.5em;
+	margin:.5em;}
+/* Icons for Skillcards */
+div.skillcard span {
+margin-right:.5em;
+display:inline-block;
+float:left;}
+
+div.skillcard h1{
+	background:#6E6969;
+	color:#DEC2C7;
+	margin: -.5em -.5em;
+	margin-bottom:0;
+	padding:0.3em;
+	font-size:1.1rem;
+	font-weight:lighter;}
+	
+div.skillcard hr{
+	margin:0;
+	border-top:1px solid #BEAAAE;}
+	
+div.skillcard p{margin:.25em 0;}

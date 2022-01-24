@@ -15,6 +15,11 @@ body {
 		linear-gradient(to right, #C8C3AB 1px, transparent 1px),
 		linear-gradient(to bottom, #C8C3AB 1px, transparent 1px);
 	box-shadow:2px 0px 1px #6E7060;}
+	
+	
+	
+	
+
 section.pad {
 	padding:1em;
 	margin-bottom:1em;
@@ -37,7 +42,7 @@ h1.section{
 	padding-left:0.5em;
 	margin-bottom:initial;
 	font-weight:lighter;}
-span.nowrap {white-space:nowrap;}
+.nowrap {white-space:nowrap;}
 
 a:link{color:#404205;}
 a:visited{color:#404205;}
@@ -51,41 +56,23 @@ a:hover{color:#5f6308;}
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-start;
-	margin-top:0em;
-}
+	margin-top:0em;}
 
 nav.articlenav {
 	background:#DAD4BB;
 	box-shadow: 2px 2px 1px #6E7060;
 	padding:.5em;
 	margin-bottom:1em;
-	flex-shrink:0;
-}
-nav.articlenav ul{margin:0 0.2rem 0 0.2rem;padding:0;list-style:none;border-top: 2px solid #B5B09C;border-bottom:2px solid #B5B09C;}
-nav.articlenav li{padding:0.5rem 1rem 0.5rem 1rem;margin-right:-.7rem;margin-left:-.7rem;font-size:1.2rem;}
+	flex-shrink:0;}
+nav.articlenav ul{
+	margin:0 0.2rem 0 0.2rem;
+	padding:0;
+	list-style:none;
+	border-top:2px solid #B5B09C;
+	border-bottom:2px solid #B5B09C;}
+nav.articlenav li{
+	padding:0.5rem 1rem 0.5rem 1rem;
+	margin-right:-.7rem;margin-left:-.7rem;
+	font-size:1.2rem;}
 nav.articlenav li:hover{background:#47443B;color:#D7D2B5;}
 nav.articlenav a{text-decoration:none;}
-/* i dont know if i like this... */
-blockquote{
-	background:#DAD4BB;
-	padding:1em;
-	position:relative;
-	display:inline-block;
-	flex:1;
-	flex-grow:1;
-	min-width:55%;
-	margin-top:0;
-	margin-right:0;
-	/* box-shadow: 2px 2px 1px #6E7060; */
-}
-blockquote:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -1.5rem;
-	bottom: 0;
-	height: 100%;
-	width: 0.3rem;
-	border: solid #8A8570;
-	border-width: 0 0.2rem 0 0.6rem;
-	margin-left:0;}

@@ -3,13 +3,11 @@ header{margin-left:-2em;margin-right:-.5em;}
 nav.sitenav{
 	border-bottom:20px solid #47443B;
 	border-image:url("ui/border.png") 27 repeat;
+	border-width:0 0 20px;
 	padding:0;
 	padding-left:1.5em;
 	display:inline-block;
-	width:100%;
-	/*these are here to fix a mobile problem*/
-	border-width:0 0 20px;
-}
+	width:100%;}
 
 img.menuicon{height:1.4rem;margin-bottom:-.2rem;}
 
@@ -24,29 +22,23 @@ h2.menu{
 	text-transform:uppercase;
 	font-weight:lighter;
 	display:inline-block;
-	white-space: nowrap ;
-}
+	white-space: nowrap ;}
 
 h2.active{
 	background:#47443B;
 	color:#D7D2B5;
-	padding-bottom:.9em;
-}
+	padding-bottom:.9em;}
+
+h2.inactive{background:#B1AC98;color:#47443B;}
+
+h2.inactive:hover{background:#47443B;color:#D7D2B5;}
+
 /*when screen is narrow make the active tab the same height
 as the others for better consitancy when they start wrapping*/
 @media (max-width:47.5rem){
 	h2.active{padding-bottom:.3em;}
 	h2.menu{margin-bottom:.6em;}}
 
-h2.inactive{
-	background:#B1AC98;
-	color:#47443B;
-}
-
-h2.inactive:hover{
-	background:#47443B;
-	color:#D7D2B5;
-}
 
 h1.articletitle{
 	display:inline-block;
@@ -56,28 +48,23 @@ h1.articletitle{
 	text-shadow:6px 6px 1px #B1AC98;
 	letter-spacing:0.1em;
 	margin-top:.25em;
-	margin-bottom:0;
-}
+	margin-bottom:0;}
 h2.subtitle{
 	display:inline-block;
 	font-size:1.25em;
-	font-weight:lighter;
-}
+	font-weight:lighter;}
 
 
-/*Skill Card Styling*/
-
+/*** Skill Card Styling ***/
 div.skillcard{
 	border:1px solid #47443B;
 	padding:.5em;
-	margin:.5em;
-}
-
-div.skillcard span { /*icons for skillcards*/
+	margin:.5em;}
+/* Icons for Skillcards */
+div.skillcard span {
 margin-right:.5em;
 display:inline-block;
-float:left;
-}
+float:left;}
 
 div.skillcard h1{
 	background:#47443B;
@@ -86,12 +73,10 @@ div.skillcard h1{
 	margin-bottom:0;
 	padding:0.3em;
 	font-size:1.1rem;
-	font-weight:lighter;
-}
+	font-weight:lighter;}
+	
 div.skillcard hr{
 	margin:0;
-	border-top:1px solid #B1AC98;
-}
-div.skillcard p{
-	margin:.25em 0;
-	}
+	border-top:1px solid #B1AC98;}
+	
+div.skillcard p{margin:.25em 0;}

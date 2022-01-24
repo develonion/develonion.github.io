@@ -10,8 +10,7 @@ margin-bottom:0;
 margin-top:0;
 padding:2em;
 padding-top:1em;
-padding-bottom:1em;
-}
+padding-bottom:1em;}
 
 /*red text for making notes*/
 .todo{
@@ -20,15 +19,17 @@ background-color:black;
 font-weight:bold;
 text-transform:uppercase;
 text-align:justify;
-text-align-last:center;
-}
-.center{
-	text-align:center;
-}
+text-align-last:center;}
+.center{text-align:center;}
+.nowrap {white-space:nowrap;}
+
+a:link{color:#404205;}
+a:visited{color:#404205;}
+a:hover{color:#5f6308;}
+
 
 /***Rotation Window and Sprite Icons***/
-
-/* Rotation Container */
+/** Rotation Container **/
 div.rot {
 margin:auto;
 text-align:left;
@@ -43,29 +44,18 @@ border:2px outset #50504A;
 border-radius:.3em;
 background:#50504A;}
 
-
 /*adds padding and makes sure text doesnt move sprites*/
-div.rot ul {
-padding:12px;
-font-size:0
-}
+div.rot ul {padding:12px;font-size:0}
 /*normal rotation icons*/
 div.rot li {margin:2px;display:inline-block}
 /*rotation icons for weaving */
 div.rot li.i {margin:-3px;display:inline-block;transform:scale(0.75)}
- /*regular sized inline icons*/
+/*regular sized inline icons*/
 span.n {display:inline-block;margin:2px}
-
-span.s { /*small icons for inline text*/
-display:inline-block;
-transform:scale(.5);
-margin:-12px -10px -16px -12px
-}
-
-span.t { /*icons for skillcards*/
-margin:3px 2px 0px 2px;
-display:inline-block;
-}
+/*small icons for inline text*/
+span.s {display:inline-block;transform:scale(.5);margin:-12px -10px -16px -12px}
+/*icons for skillcards*/
+span.t {margin:3px 2px 0px 2px;display:inline-block;}
 
 /*this specifically applies to etro embeds*/
 iframe.gear {
