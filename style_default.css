@@ -72,8 +72,10 @@ h2.active{
 h2.inactive{background:#B1AC98;color:#47443B;}
 /*Hover for Background Change*/
 h2.inactive:hover{background:#47443B;color:#D7D2B5;}
+/* Broken guide buttons */
+h2.broken{background:#B8987F;color:#B1AC98;}
 /* Sizing for Menu Icons */
-img.menuicon{height:1.4rem;margin-bottom:-.2rem;}
+img.menuicon{height:1.4rem;margin-bottom:-.2rem;/*image-rendering:crisp-edges;*/}
 /* When screen is narrow this make the active tab the same height
 as the others for better consitancy when they start wrapping. */
 @media (max-width:47.5rem){
@@ -166,7 +168,11 @@ h1.section{
 	padding-left:0.5em;
 	margin-bottom:initial;
 	font-weight:lighter;}
-
+/* Signature Styling */
+p.sign{
+text-align:right;
+font-style:italic;
+}
 /***Rotation Window and Sprite Icons***/
 /** Rotation Container **/
 div.rot {
